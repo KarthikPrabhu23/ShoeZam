@@ -20,8 +20,9 @@ class SignIn extends StatelessWidget {
             Container(
               height: 500,
               width: double.infinity,
-              color: Colors.red,
+              color: const Color.fromARGB(180, 244, 117, 54),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
 
                  const SizedBox(height:30),
