@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/auth/signin.dart';
 import 'package:firebase_core/firebase_core.dart';
+
 import 'firebase_options.dart';
 
-Future <void> main() async {
+Future<void> main() async {
 
-await Firebase.initializeApp(
+      WidgetsFlutterBinding.ensureInitialized();
+
+  // This is the last thing you need to add. 
+  await Firebase.initializeApp
+  (
     options: DefaultFirebaseOptions.currentPlatform,
-);
+  );
+
   runApp(const MyApp());
 }
 

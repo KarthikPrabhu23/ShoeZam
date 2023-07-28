@@ -1,9 +1,45 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import "package:flutter/material.dart";
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shop_flutter/screens/homescreen.dart';
 
-class SignIn extends StatelessWidget {
+class SignIn extends StatefulWidget {
   const SignIn({super.key});
 
+  @override
+  State<SignIn> createState() => SignInState();
+
+
+}
+
+class SignInState extends State<SignIn> {
+
+  googleSignUp() async {
+    try {
+      final GoogleSignIn googleSignIn = GoogleSignIn(
+        scopes: ['email'],
+      );
+      final FirebaseAuth gauth = FirebaseAuth.instance;
+
+      final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+      final GoogleSignInAuthentication? googleAuth =
+          await googleUser?.authentication;
+
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth?.accessToken,
+        idToken: googleAuth?.idToken,
+      );
+
+      final User? user = (await gauth.signInWithCredential(credential)).user;
+      // print("signed in " + user.displayName);
+
+      return user;
+    // ignore: empty_catches
+    } catch (e) {
+    }
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +84,14 @@ class SignIn extends StatelessWidget {
                       SignInButton( 
                         Buttons.Google,
                         text: "Sign up with Google",
-                        onPressed: () {},
+                        onPressed: () {
+                          googleSignUp().then((value) => Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                              builder: (context)=> const HomeScreen(),
+                            ),
+                           ),
+                          );
+                        },
                       ),
                        SignInButton( 
                         Buttons.AppleDark,
