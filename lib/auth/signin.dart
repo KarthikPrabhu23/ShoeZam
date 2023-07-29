@@ -9,12 +9,9 @@ class SignIn extends StatefulWidget {
 
   @override
   State<SignIn> createState() => SignInState();
-
-
 }
 
 class SignInState extends State<SignIn> {
-
   googleSignUp() async {
     try {
       final GoogleSignIn googleSignIn = GoogleSignIn(
@@ -35,21 +32,17 @@ class SignInState extends State<SignIn> {
       // print("signed in " + user.displayName);
 
       return user;
-    // ignore: empty_catches
-    } catch (e) {
-    }
+      // ignore: empty_catches
+    } catch (e) {}
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                fit: BoxFit.cover, 
-                image: AssetImage('assets/man2.png')
-            )
-        ),
+                fit: BoxFit.cover, image: AssetImage('assets/man2.png'))),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -60,59 +53,62 @@ class SignInState extends State<SignIn> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-
-                 const SizedBox(height:30),
-                  const Text('Sign in to continue', style: TextStyle(fontSize: 23,),),
-                  
-
-                 const SizedBox(height:70),
-                  Text('Shoe House',
-                  style: TextStyle(
-                    fontSize: 63,
-                    color: const Color.fromARGB(255, 52, 8, 8),
-                    shadows:[
-                      BoxShadow(
-                        blurRadius: 10,
-                        color: Colors.red.shade100,
-                        offset: const Offset(3, 3),
-                      )
-                    ]),
+                  const SizedBox(height: 30),
+                  const Text(
+                    'Sign in to continue',
+                    style: TextStyle(
+                      fontSize: 23,
+                    ),
                   ),
-                 const SizedBox(height:30),
+                  const SizedBox(height: 70),
+                  Text(
+                    'Shoe House',
+                    style: TextStyle(
+                        fontSize: 63,
+                        color: const Color.fromARGB(255, 52, 8, 8),
+                        shadows: [
+                          BoxShadow(
+                            blurRadius: 10,
+                            color: Colors.red.shade100,
+                            offset: const Offset(3, 3),
+                          )
+                        ]),
+                  ),
+                  const SizedBox(height: 30),
                   Column(
                     children: [
-                      SignInButton( 
+                      SignInButton(
                         Buttons.Google,
                         text: "Sign up with Google",
                         onPressed: () {
-                          googleSignUp().then((value) => Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(
-                              builder: (context)=> const HomeScreen(),
+                          googleSignUp().then(
+                            (value) => Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => const HomeScreen(),
+                              ),
                             ),
-                           ),
                           );
                         },
                       ),
-                       SignInButton( 
+                      SignInButton(
                         Buttons.AppleDark,
                         text: "Sign up with Apple",
                         onPressed: () {},
                       ),
-                       SignInButton( 
+                      SignInButton(
                         Buttons.GitHub,
                         text: "Sign up with GitHub",
                         onPressed: () {},
                       ),
                     ],
                   ),
-                  
-                 const SizedBox(height:30),
-                  const Text('By signing in, You are agreeing to our \n Terms & Privacy policy ', 
+                  const SizedBox(height: 30),
+                  const Text(
+                    'By signing in, You are agreeing to our \n Terms & Privacy policy ',
                     style: TextStyle(color: Colors.black26),
-                    ),
+                  ),
                 ],
               ),
-
             )
           ],
         ),

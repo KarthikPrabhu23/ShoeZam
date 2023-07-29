@@ -71,7 +71,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '503086710440',
     projectId: 'store23-7b935',
     storageBucket: 'store23-7b935.appspot.com',
-    iosClientId: '503086710440-j1g4v3d0fmqp3i8b8d9185kq87kdoegp.apps.googleusercontent.com',
+    iosClientId:
+        '503086710440-j1g4v3d0fmqp3i8b8d9185kq87kdoegp.apps.googleusercontent.com',
     iosBundleId: 'com.example.shopFlutter',
   );
 
@@ -81,7 +82,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '503086710440',
     projectId: 'store23-7b935',
     storageBucket: 'store23-7b935.appspot.com',
-    iosClientId: '503086710440-j1g4v3d0fmqp3i8b8d9185kq87kdoegp.apps.googleusercontent.com',
+    iosClientId:
+        '503086710440-j1g4v3d0fmqp3i8b8d9185kq87kdoegp.apps.googleusercontent.com',
     iosBundleId: 'com.example.shopFlutter',
   );
 }
