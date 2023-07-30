@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
+
 
 class brandCard1 extends StatelessWidget {
   final String brandImage;
@@ -30,16 +33,16 @@ class brandCard1 extends StatelessWidget {
                       height: 70,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        image: const DecorationImage(
+                        image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage('assets/b1.jpg'),
+                          image: AssetImage('assets/b3.jpg'),
                         ),
                       ),
                     ),
                     Expanded(
                       flex: 2,
                       child: Image.asset(
-                        'assets/b1.jpg',
+                        'assets/b3.jpg',
                         fit: BoxFit.cover,
                       ),
                       // ),

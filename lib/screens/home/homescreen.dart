@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
 //                 //   child: Padding(
 //                 //     padding: const EdgeInsets.only(right: 25),
 //                 //     child: Image.asset(
-//                 //       'assets/s1.png',
+//                 //       'assets/sn1.png',
 //                 //       scale: 0.5,
 //                 //     ),
 //                 //   ),
@@ -227,39 +227,39 @@ class HomeScreen extends StatelessWidget {
               child: Row(
                 children: [
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sp11.png',
                       shoeTitle: 'Yeezy',
                       shoeTitle2: 'Slippers shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sn3.png',
                       shoeTitle: 'Yeezy',
                       shoeTitle2: 'Slippers shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sn2.png',
                       shoeTitle: 'Yeezy',
                       shoeTitle2: 'Slippers shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sp11.png',
                       shoeTitle: 'Reebok',
                       shoeTitle2: 'Jogging shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sp22.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sp22.png',
                       shoeTitle: 'Sketchers',
                       shoeTitle2: 'Formal shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes'),
                   singleCard1(
-                      shoeImage: 'assets/s1.png',
+                      shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Adidas',
                       shoeTitle2: 'Walking shoes'),
                 ],
@@ -281,14 +281,14 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
-                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.jpg',),
+                  brandCard1(brandImage: 'assets/b2.jpeg',),
+                  brandCard1(brandImage: 'assets/b3.jpg',),
+                  brandCard1(brandImage: 'assets/b2.jpeg',),
+                  brandCard1(brandImage: 'assets/b3.png',),
+                  brandCard1(brandImage: 'assets/b1.png',),
+                  brandCard1(brandImage: 'assets/b1.jpg',),
+                  brandCard1(brandImage: 'assets/b1.png',),
                 ],
               ),
             )

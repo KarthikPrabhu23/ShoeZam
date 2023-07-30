@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:shop_flutter/constants/colorfile.dart';
@@ -7,7 +9,11 @@ class singleCard1 extends StatelessWidget {
   final String shoeTitle;
   final String shoeTitle2;
 
-  const singleCard1({super.key, required this.shoeImage, required this.shoeTitle, required this.shoeTitle2});
+  const singleCard1(
+      {super.key,
+      required this.shoeImage,
+      required this.shoeTitle,
+      required this.shoeTitle2});
 
   @override
   Widget build(BuildContext context) {
@@ -31,22 +37,33 @@ class singleCard1 extends StatelessWidget {
                   children: [
                     // Expanded(
                     // flex: 2,
-                    // child: Image.asset('assets/s1.png',height:250,width: 250,),
-                    Transform.rotate(
-                      angle: -math.pi / 4,
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 25),
-                        child: Image.asset(
-                          shoeImage,
-                          scale: 0.5,
-                        ),
-                      ),
+                    // child: Image.asset('assets/sn1.png',height:250,width: 250,),
+                    SizedBox(
+                      height: 33,
                     ),
-
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Transform.rotate(
+                          angle: -math.pi / 4,
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Image.asset(
+                              shoeImage,
+                              scale: 0.5,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    // SizedBox(
+                    //   height: 50,
+                    // ),
                     // ),
                     Expanded(
                         child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
                           shoeTitle,
@@ -109,10 +126,18 @@ class singleCard1 extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            
                           ],
-                        )
+                          
+                        ),
+                        SizedBox(
+                              height: 10,
+                            ),
+                        
                       ],
-                    ))
+                      
+                    ),
+                    )
                   ],
                 ),
               ),
