@@ -109,9 +109,9 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget BrandCard1() {
+  Widget brandCard1() {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 8),
+      margin: const EdgeInsets.symmetric(horizontal: 3),
       height: 70,
       width: 150,
       decoration: BoxDecoration(
@@ -119,7 +119,7 @@ class HomeScreen extends StatelessWidget {
         color: Col.CardCol,
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+        padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,6 +130,7 @@ class HomeScreen extends StatelessWidget {
                   'assets/s1.png',
                   height: 250,
                   width: 250,
+                  
                 ),
                 // Transform.rotate(
                 //   angle: -math.pi / 4,
@@ -246,13 +247,14 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  BrandCard1(),
-                  BrandCard1(),
-                  BrandCard1(),
-                  BrandCard1(),
-                  BrandCard1(),
-                  BrandCard1(),
-                  BrandCard1(),
+                  brandCard1(),
+                  brandCard1(),
+                  brandCard1(),
+                  brandCard1(),
+                  brandCard1(),
+                  brandCard1(),
+                  brandCard1(),
+                  brandCard1(),
                 ],
               ),
             )
