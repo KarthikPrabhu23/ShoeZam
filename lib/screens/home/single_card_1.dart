@@ -8,12 +8,14 @@ class singleCard1 extends StatelessWidget {
   final String shoeImage;
   final String shoeTitle;
   final String shoeTitle2;
+  final String shoeCost;
 
   const singleCard1(
       {super.key,
       required this.shoeImage,
       required this.shoeTitle,
-      required this.shoeTitle2});
+      required this.shoeTitle2,
+      required this.shoeCost});
 
   @override
   Widget build(BuildContext context) {
@@ -79,6 +81,7 @@ class singleCard1 extends StatelessWidget {
                         ),
                         const SizedBox(height: 5),
                         Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
                               child: Container(
@@ -91,23 +94,24 @@ class singleCard1 extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
                                   child: Row(
-                                    children: const [
+                                    children: [
                                       Expanded(
                                         child: Text(
-                                          'Blue ',
+                                          shoeCost,
                                           style: TextStyle(
                                             fontSize: 15,
-                                            color: Colors.black45,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.white,
                                           ),
                                         ),
                                       ),
-                                      Center(
-                                        child: Icon(
-                                          Icons.arrow_drop_down,
-                                          size: 23,
-                                          color: Colors.white,
-                                        ),
-                                      )
+                                      // Center(
+                                      //   child: Icon(
+                                      //     Icons.arrow_drop_down,
+                                      //     size: 23,
+                                      //     color: Colors.white,
+                                      //   ),
+                                      // )
                                     ],
                                   ),
                                 ),
@@ -119,7 +123,7 @@ class singleCard1 extends StatelessWidget {
                             Expanded(
                               child: Container(
                                 height: 30,
-                                width: 50,
+                                width: 30,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(9),
                                   border: Border.all(color: Colors.black45),
