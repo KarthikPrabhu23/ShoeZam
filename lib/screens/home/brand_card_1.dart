@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
 
-
 class brandCard1 extends StatelessWidget {
   final String brandImage;
 
@@ -18,9 +17,9 @@ class brandCard1 extends StatelessWidget {
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 3),
             height: 70,
-            width: 110,
+            // width: 110,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              // borderRadius: BorderRadius.circular(20),
               color: Col.CardCol,
             ),
             child: Padding(
@@ -31,22 +30,28 @@ class brandCard1 extends StatelessWidget {
                   children: [
                     Container(
                       height: 70,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage('assets/b3.jpg'),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      flex: 2,
                       child: Image.asset(
-                        'assets/b3.jpg',
+                        brandImage,
+                        width: 110,
                         fit: BoxFit.cover,
                       ),
+                      // decoration: BoxDecoration(
+                      //   borderRadius: BorderRadius.circular(20),
+                      //   image: DecorationImage(
+                      //     fit: BoxFit.cover,
+                      //     image: AssetImage('assets/b3.jpg'),
+                      //   ),
+
                       // ),
                     ),
+                    // Expanded(
+                    //   flex: 2,
+                    //   child: Image.asset(
+                    //     'assets/b3.jpg',
+                    //     fit: BoxFit.cover,
+                    //   ),
+                    //   // ),
+                    // ),
                   ],
                 ),
               ),
