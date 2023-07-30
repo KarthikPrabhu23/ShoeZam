@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/auth/signin.dart';
 import 'package:firebase_core/firebase_core.dart';

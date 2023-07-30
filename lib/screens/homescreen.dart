@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:shop_flutter/constants/colorfile.dart';
@@ -126,9 +128,8 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 height: 70,
-                decoration:  BoxDecoration(
-                  
-        borderRadius: BorderRadius.circular(20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage('assets/puma.jpg'),
@@ -159,14 +160,77 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
+  Widget listTile({required IconData icon, required String title}) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        size: 34,
+      ),
+      title: Text(
+        title,
+        style: TextStyle(color: Colors.black),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Col.AppBarColor,
-      drawer: const Drawer(),
+      drawer: Drawer(
+        child: Container(
+          color: Col.HomeBGColor,
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.black45,
+                      radius: 40,
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white24,
+                        radius: 37,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text('Welcome Karthik'),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                          height: 20,
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            child: Text('Login'),
+                            // shape: RoundedRectangleBorder(
+                            //   borderRadius: BorderRadius.circular(
+                            //     29,
+                            //   ),
+                            // ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              listTile(
+                icon: Icons.home,
+                title: "Home",
+              )
+            ],
+          ),
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Col.AppBarColor,
-        title: const Text('Home'),
+        title: const Text('ShoeZam'),
         actions: [
           CircleAvatar(
             radius: 23,
