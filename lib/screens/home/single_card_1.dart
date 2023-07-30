@@ -7,7 +7,7 @@ class singleCard1 extends StatelessWidget {
   final String shoeTitle;
   final String shoeTitle2;
 
-  const singleCard1({required this.shoeImage, required this.shoeTitle, required this.shoeTitle2});
+  const singleCard1({super.key, required this.shoeImage, required this.shoeTitle, required this.shoeTitle2});
 
   @override
   Widget build(BuildContext context) {

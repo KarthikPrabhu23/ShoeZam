@@ -3,58 +3,61 @@
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
 import 'package:shop_flutter/screens/home/single_card_1.dart';
+import 'package:shop_flutter/screens/home/brand_card_1.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  Widget brandCard1() {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 3),
-      height: 70,
-      width: 110,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Col.CardCol,
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 70,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: const DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage('assets/puma.jpg'),
-                  ),
-                ),
-              ),
-              Expanded(
-                flex: 2,
-                child: Image.asset(
-                  'assets/puma.jpg',
-                  fit: BoxFit.cover,
-                ),
-                // Transform.rotate(
-                //   angle: -math.pi / 4,
-                //   child: Padding(
-                //     padding: const EdgeInsets.only(right: 25),
-                //     child: Image.asset(
-                //       'assets/s1.png',
-                //       scale: 0.5,
-                //     ),
-                //   ),
-                // ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+//   Widget brandCard1() {
+//     return Container(
+//       margin: const EdgeInsets.symmetric(horizontal: 3),
+//       height: 70,
+//       width: 110,
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(20),
+//         color: Col.CardCol,
+//       ),
+//       child: Padding(
+//         padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
+//         child: Center(
+//           child: Column(
+//             crossAxisAlignment: CrossAxisAlignment.start,
+//             children: [
+//               Container(
+//                 height: 70,
+//                 decoration: BoxDecoration(
+//                   borderRadius: BorderRadius.circular(20),
+//                   image: const DecorationImage(
+//                     fit: BoxFit.cover,
+//                     image: AssetImage('assets/b1.jpg'),
+//                   ),
+//                 ),
+//               ),
+//               Expanded(
+//                 flex: 2,
+//                 child: Image.asset(
+//                   'assets/b1.jpg',
+//                   fit: BoxFit.cover,
+//                 ),
+//                 // Transform.rotate(
+//                 //   angle: -math.pi / 4,
+//                 //   child: Padding(
+//                 //     padding: const EdgeInsets.only(right: 25),
+//                 //     child: Image.asset(
+//                 //       'assets/s1.png',
+//                 //       scale: 0.5,
+//                 //     ),
+//                 //   ),
+//                 // ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+
+// //
 
   Widget listTile({required IconData icon, required String title}) {
     return ListTile(
@@ -278,14 +281,14 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  brandCard1(),
-                  brandCard1(),
-                  brandCard1(),
-                  brandCard1(),
-                  brandCard1(),
-                  brandCard1(),
-                  brandCard1(),
-                  brandCard1(),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
+                  brandCard1(brandImage: 'assets/b1.png'),
                 ],
               ),
             )
