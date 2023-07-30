@@ -194,14 +194,17 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      width: 20,
                     ),
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Welcome Karthik'),
+                        Text(
+                          'Welcome User,',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                         SizedBox(
-                          height: 5,
+                          height: 12,
                         ),
                         Container(
                           height: 20,
@@ -220,10 +223,42 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              listTile(
-                icon: Icons.home,
-                title: "Home",
-              )
+              Column(
+                children: [
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
+                  listTile(
+                    icon: Icons.favorite,
+                    title: "Wishlist",
+                  ),
+                  listTile(
+                    icon: Icons.shopping_cart_rounded,
+                    title: "Cart",
+                  ),
+                  listTile(
+                    icon: Icons.notifications_active,
+                    title: "Notifications",
+                  ),
+                  listTile(
+                    icon: Icons.format_quote_rounded,
+                    title: "More info",
+                  ),
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
+                ],
+              ),
             ],
           ),
         ),
