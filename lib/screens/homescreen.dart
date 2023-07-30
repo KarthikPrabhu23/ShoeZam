@@ -8,30 +8,30 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colorfile.barColor,
+      backgroundColor: Col.AppBarColor,
       drawer: const Drawer(),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(0, 64, 77, 88),
+        backgroundColor: Col.AppBarColor,
         title: const Text('Home'),
-        actions: const [
+        actions:  [
           CircleAvatar(
             radius: 23,
-            backgroundColor: Color.fromARGB(172, 3, 168, 244),
-            child: Icon(
+            backgroundColor: Col.IconBG,
+            child: const Icon(
               Icons.search,
               size: 22,
               color: Colors.black,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 18.0),
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child: CircleAvatar(
               radius: 23,
-              backgroundColor: Color.fromARGB(172, 3, 168, 244),
-              child: Icon(
+              backgroundColor: Col.IconBG,
+              child: const Icon(
                 Icons.shopping_bag,
                 size: 22,
                 color: Colors.black,
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
               height: 175,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.amber,
+                color: Col.HomeBGColor,
                 image:
                     const DecorationImage(image: AssetImage('assets/man2.png')),
               ),
@@ -62,12 +62,12 @@ class HomeScreen extends StatelessWidget {
                   Text(
                     'Popular shoes',
                     style: TextStyle(
-                        color: Color.fromARGB(255, 255, 255, 255),
+                        color: Colors.white,
                         fontSize: 20),
                   ),
                   Text(
                     'view all',
-                    style: TextStyle(color: Colors.lightGreen),
+                    style: TextStyle(color: Colors.white54),
                   ),
                 ],
               ),
@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: const Color.fromARGB(123, 231, 37, 37),
+                    color: Col.CardCol ,
                   ),
                   child: Padding(
                     padding:
@@ -107,16 +107,16 @@ class HomeScreen extends StatelessWidget {
                               child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text(
+                              Text(
                                 'Nike',
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: Col.CardText1,
                                     fontWeight: FontWeight.bold),
                               ),
-                              const Text(
+                              Text(
                                 'Running shoes',
                                 style: TextStyle(
-                                    color: Color.fromARGB(201, 255, 255, 255),
+                                    color: Col.CardText2,
                                     fontWeight: FontWeight.w300),
                               ),
                               const SizedBox(height: 5),

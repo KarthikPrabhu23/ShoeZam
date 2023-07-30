@@ -3,7 +3,7 @@ import "package:flutter/material.dart";
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shop_flutter/screens/homescreen.dart';
-
+import 'package:shop_flutter/constants/colorfile.dart';
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
 
@@ -49,7 +49,7 @@ class SignInState extends State<SignIn> {
             Container(
               height: 500,
               width: double.infinity,
-              color: const Color.fromARGB(180, 244, 117, 54),
+              color: Col.SignBG,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -65,7 +65,7 @@ class SignInState extends State<SignIn> {
                     'Shoe House',
                     style: TextStyle(
                         fontSize: 63,
-                        color: const Color.fromARGB(255, 52, 8, 8),
+                        color: Col.Title,
                         shadows: [
                           BoxShadow(
                             blurRadius: 10,
