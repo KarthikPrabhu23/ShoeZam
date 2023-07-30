@@ -113,24 +113,33 @@ class HomeScreen extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 3),
       height: 70,
-      width: 150,
+      width: 110,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Col.CardCol,
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Container(
+                height: 70,
+                decoration:  BoxDecoration(
+                  
+        borderRadius: BorderRadius.circular(20),
+                  image: const DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('assets/puma.jpg'),
+                  ),
+                ),
+              ),
               Expanded(
                 flex: 2,
                 child: Image.asset(
-                  'assets/s1.png',
-                  height: 250,
-                  width: 250,
-                  
+                  'assets/puma.jpg',
+                  fit: BoxFit.cover,
                 ),
                 // Transform.rotate(
                 //   angle: -math.pi / 4,
