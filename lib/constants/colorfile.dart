@@ -6,6 +6,7 @@ class Col {
   // Homescreen.dart
   static Color AppBarColor = Colors.blue;
   static Color IconBG = const Color.fromARGB(172, 3, 168, 244);
+  static Color TopCard = const Color.fromARGB(245, 255, 247, 21);
   static Color HomeBGColor = const Color.fromARGB(172, 3, 168, 244);
   static Color CardCol = const Color.fromARGB(123, 231, 37, 37);
   static Color CardText1 = Colors.white;
