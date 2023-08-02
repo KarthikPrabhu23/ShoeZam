@@ -1,7 +1,7 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors
+// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import "package:flutter/material.dart";
-
+import 'package:shop_flutter/screens/home/single_card_1.dart';
 import "../../constants/colorfile.dart";
 
 class product extends StatefulWidget {
@@ -34,8 +34,10 @@ class _productState extends State<product> {
             const SizedBox(
               width: 5,
             ),
-            Text(title,
-            style: TextStyle(color: Colors.white),)
+            Text(
+              title,
+              style: TextStyle(color: Colors.white),
+            )
           ],
         ),
       ),
@@ -69,6 +71,160 @@ class _productState extends State<product> {
           'Product',
           style: TextStyle(color: Col.CardText1),
         ),
+      ),
+      body: Column(
+          children: [
+            Expanded(
+              // flex: 2,
+              child: Container(
+                width: double.infinity,
+                child: Column(
+                  children: [
+                    ListTile(
+                      title: Text(
+                        'Nike',
+                        style: TextStyle(color: Colors.black, fontSize: 30),
+                      ),
+                      subtitle: Text(
+                        'Running shoes',
+                        style: TextStyle(color: Colors.black54, fontSize: 20),
+                      ),
+                    ),
+                    Container(
+                      height: 270,
+                      padding: EdgeInsets.all(30),
+                      child: Image.asset('assets/sn11.png'),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      width: double.infinity,
+                      child: Text(
+                        'Choose your size',
+                        style: TextStyle(
+                            color: Colors.black45, fontWeight: FontWeight.w300),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+                child: Container(
+              padding: EdgeInsets.all(20),
+              width: double.infinity,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'About the product',
+                    style: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    'Description ',
+                    style: TextStyle(
+                      color: Colors.black87,
+                      fontWeight: FontWeight.w300,
+                      fontSize: 13,
+                    ),
+                  ),
+                  SizedBox(height: 25),
+                  Text(
+                    'More products',
+                    style: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        singleCard1(
+                            shoeImage: 'assets/sn11.png',
+                            shoeTitle: 'Nike',
+                            shoeTitle2: 'Running shoes',
+                            shoeCost: '₹3,000',
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => product(),
+                                ),
+                              );
+                            }),
+                        singleCard1(
+                            shoeImage: 'assets/sp11.png',
+                            shoeTitle: 'Yeezy',
+                            shoeTitle2: 'Slippers shoes',
+                            shoeCost: '₹23,000',
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => product(),
+                                ),
+                              );
+                            }),
+                        singleCard1(
+                            shoeImage: 'assets/sn3.png',
+                            shoeTitle: 'Yeezy',
+                            shoeTitle2: 'Slippers shoes',
+                            shoeCost: '₹23,000',
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => product(),
+                                ),
+                              );
+                            }),
+                        singleCard1(
+                            shoeImage: 'assets/sn2.png',
+                            shoeTitle: 'Yeezy',
+                            shoeTitle2: 'Slippers shoes',
+                            shoeCost: '₹23,000',
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => product(),
+                                ),
+                              );
+                            }),
+                        singleCard1(
+                            shoeImage: 'assets/sp11.png',
+                            shoeTitle: 'Reebok',
+                            shoeTitle2: 'Jogging shoes',
+                            shoeCost: '₹23,000',
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => product(),
+                                ),
+                              );
+                            }),
+                        singleCard1(
+                            shoeImage: 'assets/sp22.png',
+                            shoeTitle: 'Nike',
+                            shoeTitle2: 'Running shoes',
+                            shoeCost: '₹23,000',
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => product(),
+                                ),
+                              );
+                            }),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ))
+          ],
       ),
     );
   }
