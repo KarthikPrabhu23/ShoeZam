@@ -5,6 +5,7 @@ import 'package:shop_flutter/constants/colorfile.dart';
 import 'package:shop_flutter/screens/home/drawer.dart';
 import 'package:shop_flutter/screens/home/single_card_1.dart';
 import 'package:shop_flutter/screens/home/brand_card_1.dart';
+import 'package:shop_flutter/screens/product/product.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -82,47 +83,110 @@ class HomeScreen extends StatelessWidget {
                       shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes',
-                      shoeCost: '₹3,000'),
+                      shoeCost: '₹3,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sp11.png',
                       shoeTitle: 'Yeezy',
                       shoeTitle2: 'Slippers shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sn3.png',
                       shoeTitle: 'Yeezy',
                       shoeTitle2: 'Slippers shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sn2.png',
                       shoeTitle: 'Yeezy',
                       shoeTitle2: 'Slippers shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sp11.png',
                       shoeTitle: 'Reebok',
                       shoeTitle2: 'Jogging shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sp22.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sp22.png',
                       shoeTitle: 'Sketchers',
                       shoeTitle2: 'Formal shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                   singleCard1(
                       shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Adidas',
                       shoeTitle2: 'Walking shoes',
-                      shoeCost: '₹23,000'),
+                      shoeCost: '₹23,000',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => product(),
+                          ),
+                        );
+                      }),
                 ],
               ),
             ),
@@ -142,14 +206,30 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  brandCard1(brandImage: 'assets/b1.jpg',),
-                  brandCard1(brandImage: 'assets/b2.jpeg',),
-                  brandCard1(brandImage: 'assets/b3.jpg',),
-                  brandCard1(brandImage: 'assets/b2.jpeg',),
-                  brandCard1(brandImage: 'assets/b3.jpg',),
-                  brandCard1(brandImage: 'assets/b1.jpg',),
-                  brandCard1(brandImage: 'assets/b1.jpg',),
-                  brandCard1(brandImage: 'assets/b1.jpg',),
+                  brandCard1(
+                    brandImage: 'assets/b1.jpg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b2.jpeg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b3.jpg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b2.jpeg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b3.jpg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b1.jpg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b1.jpg',
+                  ),
+                  brandCard1(
+                    brandImage: 'assets/b1.jpg',
+                  ),
                 ],
               ),
             )
