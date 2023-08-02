@@ -36,6 +36,7 @@ class DrawerList extends StatelessWidget {
                       radius: 40,
                       child: CircleAvatar(
                         backgroundColor: Colors.white24,
+                        backgroundImage: AssetImage("assets/sn3.png"),
                         radius: 37,
                       ),
                     ),
