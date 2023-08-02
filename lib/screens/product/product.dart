@@ -72,11 +72,14 @@ class _productState extends State<product> {
           style: TextStyle(color: Col.CardText1),
         ),
       ),
-      body: Column(
-          children: [
-            Expanded(
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              // Expanded(
               // flex: 2,
-              child: Container(
+              // child:
+              Container(
                 width: double.infinity,
                 child: Column(
                   children: [
@@ -107,124 +110,144 @@ class _productState extends State<product> {
                   ],
                 ),
               ),
-            ),
-            Expanded(
-                child: Container(
-              padding: EdgeInsets.all(20),
-              width: double.infinity,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'About the product',
-                    style: TextStyle(
-                        color: Colors.black87,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    'Description ',
-                    style: TextStyle(
-                      color: Colors.black87,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 13,
+              // ),
+              // Expanded(
+              //     child:
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '₹7,599 INR',
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 23),
                     ),
-                  ),
-                  SizedBox(height: 25),
-                  Text(
-                    'More products',
-                    style: TextStyle(
-                        color: Colors.black87,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        singleCard1(
-                            shoeImage: 'assets/sn11.png',
-                            shoeTitle: 'Nike',
-                            shoeTitle2: 'Running shoes',
-                            shoeCost: '₹3,000',
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => product(),
-                                ),
-                              );
-                            }),
-                        singleCard1(
-                            shoeImage: 'assets/sp11.png',
-                            shoeTitle: 'Yeezy',
-                            shoeTitle2: 'Slippers shoes',
-                            shoeCost: '₹23,000',
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => product(),
-                                ),
-                              );
-                            }),
-                        singleCard1(
-                            shoeImage: 'assets/sn3.png',
-                            shoeTitle: 'Yeezy',
-                            shoeTitle2: 'Slippers shoes',
-                            shoeCost: '₹23,000',
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => product(),
-                                ),
-                              );
-                            }),
-                        singleCard1(
-                            shoeImage: 'assets/sn2.png',
-                            shoeTitle: 'Yeezy',
-                            shoeTitle2: 'Slippers shoes',
-                            shoeCost: '₹23,000',
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => product(),
-                                ),
-                              );
-                            }),
-                        singleCard1(
-                            shoeImage: 'assets/sp11.png',
-                            shoeTitle: 'Reebok',
-                            shoeTitle2: 'Jogging shoes',
-                            shoeCost: '₹23,000',
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => product(),
-                                ),
-                              );
-                            }),
-                        singleCard1(
-                            shoeImage: 'assets/sp22.png',
-                            shoeTitle: 'Nike',
-                            shoeTitle2: 'Running shoes',
-                            shoeCost: '₹23,000',
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => product(),
-                                ),
-                              );
-                            }),
-                      ],
+                    SizedBox(height: 7),
+                    Text(
+                      'COD, UPI, Debit & credit card accepted',
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontWeight: FontWeight.w200,
+                          fontSize: 13),
                     ),
-                  ),
-                ],
+                    SizedBox(height: 10),
+                    Text(
+                      'About the product',
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'In today\'s game, slow-footed slugs get sought out and exposed. Space makers stay on the floor. The GT Cut 2 EP helps you stop in an instant and accelerate back into the open lane in a low-to-the-ground design that helps minimise court contact while switching direction. We used insights from female athletes to create a shoe that helps you play quickly and with confidence—which every basketball player needs. Separate the players from the playmakers in a design that\'s built on creating separation but supportive enough to help you play all day. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.',
+                      style: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(height: 25),
+                    Text(
+                      'You might also like',
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          singleCard1(
+                              shoeImage: 'assets/sn11.png',
+                              shoeTitle: 'Nike',
+                              shoeTitle2: 'Running shoes',
+                              shoeCost: '₹3,000',
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => product(),
+                                  ),
+                                );
+                              }),
+                          singleCard1(
+                              shoeImage: 'assets/sp11.png',
+                              shoeTitle: 'Yeezy',
+                              shoeTitle2: 'Slippers shoes',
+                              shoeCost: '₹23,000',
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => product(),
+                                  ),
+                                );
+                              }),
+                          singleCard1(
+                              shoeImage: 'assets/sn3.png',
+                              shoeTitle: 'Yeezy',
+                              shoeTitle2: 'Slippers shoes',
+                              shoeCost: '₹23,000',
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => product(),
+                                  ),
+                                );
+                              }),
+                          singleCard1(
+                              shoeImage: 'assets/sn2.png',
+                              shoeTitle: 'Yeezy',
+                              shoeTitle2: 'Slippers shoes',
+                              shoeCost: '₹23,000',
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => product(),
+                                  ),
+                                );
+                              }),
+                          singleCard1(
+                              shoeImage: 'assets/sp11.png',
+                              shoeTitle: 'Reebok',
+                              shoeTitle2: 'Jogging shoes',
+                              shoeCost: '₹23,000',
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => product(),
+                                  ),
+                                );
+                              }),
+                          singleCard1(
+                              shoeImage: 'assets/sp22.png',
+                              shoeTitle: 'Nike',
+                              shoeTitle2: 'Running shoes',
+                              shoeCost: '₹23,000',
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => product(),
+                                  ),
+                                );
+                              }),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ))
-          ],
+              // ),
+            ],
+          ),
+        ),
       ),
     );
   }

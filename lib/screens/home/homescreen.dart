@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Col.AppBarColor,
+      backgroundColor: Col.HomeBGColor,
       drawer: DrawerList(),
       appBar: AppBar(
         backgroundColor: Col.AppBarColor,
