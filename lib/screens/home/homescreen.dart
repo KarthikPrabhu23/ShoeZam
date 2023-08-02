@@ -2,166 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
+import 'package:shop_flutter/screens/home/drawer.dart';
 import 'package:shop_flutter/screens/home/single_card_1.dart';
 import 'package:shop_flutter/screens/home/brand_card_1.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-//   Widget brandCard1() {
-//     return Container(
-//       margin: const EdgeInsets.symmetric(horizontal: 3),
-//       height: 70,
-//       width: 110,
-//       decoration: BoxDecoration(
-//         borderRadius: BorderRadius.circular(20),
-//         color: Col.CardCol,
-//       ),
-//       child: Padding(
-//         padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
-//         child: Center(
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               Container(
-//                 height: 70,
-//                 decoration: BoxDecoration(
-//                   borderRadius: BorderRadius.circular(20),
-//                   image: const DecorationImage(
-//                     fit: BoxFit.cover,
-//                     image: AssetImage('assets/b1.jpg'),
-//                   ),
-//                 ),
-//               ),
-//               Expanded(
-//                 flex: 2,
-//                 child: Image.asset(
-//                   'assets/b1.jpg',
-//                   fit: BoxFit.cover,
-//                 ),
-//                 // Transform.rotate(
-//                 //   angle: -math.pi / 4,
-//                 //   child: Padding(
-//                 //     padding: const EdgeInsets.only(right: 25),
-//                 //     child: Image.asset(
-//                 //       'assets/sn1.png',
-//                 //       scale: 0.5,
-//                 //     ),
-//                 //   ),
-//                 // ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-
-// //
-
-  Widget listTile({required IconData icon, required String title}) {
-    return ListTile(
-      leading: Icon(
-        icon,
-        size: 34,
-      ),
-      title: Text(
-        title,
-        style: TextStyle(color: Colors.black),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Col.AppBarColor,
-      drawer: Drawer(
-        child: Container(
-          color: Col.HomeBGColor,
-          child: ListView(
-            children: [
-              DrawerHeader(
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.black45,
-                      radius: 40,
-                      child: CircleAvatar(
-                        backgroundColor: Colors.white24,
-                        radius: 37,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Welcome User,',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 12,
-                        ),
-                        Container(
-                          height: 20,
-                          child: OutlinedButton(
-                            onPressed: () {},
-                            child: Text('Login'),
-                            // shape: RoundedRectangleBorder(
-                            //   borderRadius: BorderRadius.circular(
-                            //     29,
-                            //   ),
-                            // ),
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
-              Column(
-                children: [
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
-                  listTile(
-                    icon: Icons.favorite,
-                    title: "Wishlist",
-                  ),
-                  listTile(
-                    icon: Icons.shopping_cart_rounded,
-                    title: "Cart",
-                  ),
-                  listTile(
-                    icon: Icons.notifications_active,
-                    title: "Notifications",
-                  ),
-                  listTile(
-                    icon: Icons.format_quote_rounded,
-                    title: "More info",
-                  ),
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
+      drawer: DrawerList(),
       appBar: AppBar(
         backgroundColor: Col.AppBarColor,
         title: const Text('ShoeZam'),
