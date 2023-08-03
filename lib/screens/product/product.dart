@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import
 
 import "package:flutter/material.dart";
 import 'package:shop_flutter/screens/home/single_card_1.dart';
@@ -6,7 +6,13 @@ import "../../constants/colorfile.dart";
 import "../../constants/stringfile.dart";
 
 class product extends StatefulWidget {
-  const product({super.key});
+
+  final String proName;
+  final String proImage;
+  final String brandLogo;
+  final String proPrice;
+  final String proDesc;
+  const product({super.key, required this.proName, required this.proImage, required this.brandLogo, required this.proPrice, required this.proDesc });
 
   @override
   State<product> createState() => _productState();
@@ -93,7 +99,7 @@ class _productState extends State<product> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Nike',
+                                widget.proName,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 30),
                               ),
@@ -105,7 +111,7 @@ class _productState extends State<product> {
                             ],
                           ),
                           Image.asset(
-                            'assets/b3.jpg',
+                            widget.brandLogo,
                             height: 60,
                             width: 120,
                           )
@@ -115,7 +121,7 @@ class _productState extends State<product> {
                     Container(
                       height: 270,
                       padding: EdgeInsets.all(30),
-                      child: Image.asset('assets/sn11.png'),
+                      child: Image.asset(widget.proImage),
                     ),
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 20),
@@ -139,7 +145,7 @@ class _productState extends State<product> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '₹7,599 INR',
+                      widget.proPrice ,
                       style: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.w800,
@@ -163,7 +169,7 @@ class _productState extends State<product> {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      Def.desc1,
+                      widget.proDesc,
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.w300,
@@ -193,7 +199,12 @@ class _productState extends State<product> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => product(),
+                                    builder: (context) => product(
+                                  proName: 'Nike',
+                                  proImage: 'assets/sp11.png',
+                                  brandLogo: 'assets/b3.jpg',
+                                  proPrice: '₹3,000',
+                                  proDesc: Def.desc1),
                                   ),
                                 );
                               }),
@@ -205,7 +216,12 @@ class _productState extends State<product> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => product(),
+                                    builder: (context) => product(
+                                  proName: 'Nike',
+                                  proImage: 'assets/sp11.png',
+                                  brandLogo: 'assets/b3.jpg',
+                                  proPrice: '₹3,000',
+                                  proDesc: Def.desc1),
                                   ),
                                 );
                               }),
@@ -217,7 +233,12 @@ class _productState extends State<product> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => product(),
+                                    builder: (context) => product(
+                                  proName: 'Nike',
+                                  proImage: 'assets/sp11.png',
+                                  brandLogo: 'assets/b3.jpg',
+                                  proPrice: '₹3,000',
+                                  proDesc: Def.desc1),
                                   ),
                                 );
                               }),
@@ -229,7 +250,12 @@ class _productState extends State<product> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => product(),
+                                    builder: (context) => product(
+                                  proName: 'Nike',
+                                  proImage: 'assets/sp11.png',
+                                  brandLogo: 'assets/b3.jpg',
+                                  proPrice: '₹3,000',
+                                  proDesc: Def.desc1),
                                   ),
                                 );
                               }),
@@ -241,7 +267,12 @@ class _productState extends State<product> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => product(),
+                                    builder: (context) => product(
+                                  proName: 'Nike',
+                                  proImage: 'assets/sp11.png',
+                                  brandLogo: 'assets/b3.jpg',
+                                  proPrice: '₹3,000',
+                                  proDesc: Def.desc1),
                                   ),
                                 );
                               }),
@@ -253,7 +284,12 @@ class _productState extends State<product> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => product(),
+                                    builder: (context) => product(
+                                  proName: 'Nike',
+                                  proImage: 'assets/sp11.png',
+                                  brandLogo: 'assets/b3.jpg',
+                                  proPrice: '₹3,000',
+                                  proDesc: Def.desc1),
                                   ),
                                 );
                               }),
