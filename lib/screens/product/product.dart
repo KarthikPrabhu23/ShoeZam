@@ -60,7 +60,7 @@ class _productState extends State<product> {
             iconColor: Color.fromARGB(255, 255, 255, 255),
             bgColor: Colors.white,
             color: Colors.pink,
-            title: "Add here",
+            title: "Wishlist",
             iconData: Icons.favorite,
           ),
           navigationBar(
@@ -68,7 +68,7 @@ class _productState extends State<product> {
             bgColor: Color.fromARGB(255, 255, 255, 255),
             color: Color.fromARGB(255, 25, 63, 236),
             title: "Add to cart",
-            iconData: Icons.shop,
+            iconData: Icons.shopping_cart_outlined,
           ),
         ],
       ),
