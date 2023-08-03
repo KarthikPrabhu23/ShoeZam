@@ -23,7 +23,7 @@ class singleCard1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical:23.0),
+      padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 4),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -35,19 +35,15 @@ class singleCard1 extends StatelessWidget {
                 height: 250,
                 width: 200,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Col.CardCol,
-    
-                  boxShadow: const[
-                    BoxShadow(
-                      color: Colors.black45,
-                      blurRadius: 13,
-                      offset: Offset(5,5),
-                      spreadRadius: 0.1,
-                      blurStyle: BlurStyle.normal
-                    )
-                  ]
-                ),
+                    borderRadius: BorderRadius.circular(20),
+                    color: Col.CardCol,
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 13,
+                          spreadRadius: 0.1,
+                          blurStyle: BlurStyle.outer)
+                    ]),
                 child: Padding(
                   padding:
                       const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
@@ -107,10 +103,12 @@ class singleCard1 extends StatelessWidget {
                                       width: 50,
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(9),
-                                        border: Border.all(color: Colors.black45),
+                                        border:
+                                            Border.all(color: Colors.black45),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.only(left: 5.0),
+                                        padding:
+                                            const EdgeInsets.only(left: 5.0),
                                         child: Row(
                                           children: [
                                             Expanded(
@@ -144,7 +142,8 @@ class singleCard1 extends StatelessWidget {
                                       width: 30,
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(9),
-                                        border: Border.all(color: Colors.black45),
+                                        border:
+                                            Border.all(color: Colors.black45),
                                       ),
                                     ),
                                   ),
