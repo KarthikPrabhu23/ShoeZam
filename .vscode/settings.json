@@ -1,3 +1,9 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "cmake.configureOnOpen": true,
+    "dart.flutterSdkPath": "C:\\flutter",
+    "dart.flutterSdkPaths": [
+        "C:\\flutter_3.7.8\\bin",
+        "C:\\flutter\\bin"
+    ]
 }
