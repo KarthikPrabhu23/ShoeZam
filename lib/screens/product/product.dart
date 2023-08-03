@@ -204,7 +204,7 @@ class _productState extends State<product> {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                                   ),
                                 );
                               }),
@@ -221,7 +221,7 @@ class _productState extends State<product> {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                                   ),
                                 );
                               }),
@@ -238,7 +238,7 @@ class _productState extends State<product> {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                                   ),
                                 );
                               }),
@@ -255,7 +255,7 @@ class _productState extends State<product> {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                                   ),
                                 );
                               }),
@@ -272,7 +272,7 @@ class _productState extends State<product> {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                                   ),
                                 );
                               }),
@@ -289,7 +289,7 @@ class _productState extends State<product> {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                                   ),
                                 );
                               }),

@@ -86,25 +86,25 @@ class HomeScreen extends StatelessWidget {
                       shoeImage: 'assets/sn11.png',
                       shoeTitle: 'Nike',
                       shoeTitle2: 'Running shoes',
-                      shoeCost: '₹3,000',
+                      shoeCost: '₹13,000',
                       onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => product(
                                 proName: 'Nike',
-                                proImage: 'assets/sp11.png',
+                                proImage: 'assets/sn11.png',
                                 brandLogo: 'assets/b3.jpg',
-                                proPrice: '₹3,000',
-                                proDesc: Def.desc1),
+                                proPrice: '₹13,000',
+                                proDesc: Def.descN),
                           ),
                         );
                       },
                     ),
                     singleCard1(
                         shoeImage: 'assets/sp11.png',
-                        shoeTitle: 'Yeezy',
-                        shoeTitle2: 'Slippers shoes',
-                        shoeCost: '₹23,000',
+                        shoeTitle: 'Adidas',
+                        shoeTitle2: 'Sports shoes',
+                        shoeCost: '₹9,000',
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
@@ -112,8 +112,8 @@ class HomeScreen extends StatelessWidget {
                                   proName: 'Nike',
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
-                                  proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proPrice: '₹9,000',
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -130,7 +130,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -147,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -164,7 +164,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -181,7 +181,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -198,7 +198,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -215,7 +215,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
@@ -232,7 +232,7 @@ class HomeScreen extends StatelessWidget {
                                   proImage: 'assets/sp11.png',
                                   brandLogo: 'assets/b3.jpg',
                                   proPrice: '₹3,000',
-                                  proDesc: Def.desc1),
+                                  proDesc: Def.descA),
                             ),
                           );
                         },),
