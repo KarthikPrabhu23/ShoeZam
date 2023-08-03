@@ -65,19 +65,20 @@ class SignInState extends State<SignIn> {
               SizedBox(height: 10,),
               Container(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       'Obsessed with Shoes?',
                       style:
-                          TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                          TextStyle(fontWeight: FontWeight.w600, fontSize: 20,color: Colors.black54, ),
                     ),
                     SizedBox(
                       height: 2,
                     ),
                     Text(
                       'ShoeZam !',
+                      textAlign: TextAlign.center,
                       style:
                           TextStyle(fontWeight: FontWeight.w600, fontSize: 62),
                     ),
@@ -158,7 +159,7 @@ class SignInState extends State<SignIn> {
                               ),
                               const SizedBox(height: 30),
                               const Text(
-                                'By Signing in, \n You are agreeing to our\n Terms & Privacy policy ',
+                                'By Signing in, \n    You are agreeing to our\n    Terms & Privacy policy ',
                                 style: TextStyle(color: Colors.white60),
                               ),
                               SizedBox(

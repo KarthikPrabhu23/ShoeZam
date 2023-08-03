@@ -67,12 +67,12 @@ class HomeScreen extends StatelessWidget {
                 children: const [
                   Text(
                     'Popular shoes',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
+                    style: TextStyle(color: Colors.black87, fontSize: 20),
                   ),
-                  Text(
-                    'view all',
-                    style: TextStyle(color: Colors.white54),
-                  ),
+                  // Text(
+                  //   'view all',
+                  //   style: TextStyle(color: Colors.white54),
+                  // ),
                 ],
               ),
             ),
@@ -258,7 +258,7 @@ class HomeScreen extends StatelessWidget {
                 children: const [
                   Text(
                     'Our Partners',
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.black87, fontSize: 15),
                   ),
                 ],
               ),
