@@ -1,4 +1,6 @@
-# shop_flutter
+# ShoeZam! eCommerce for Shoe Geeks
+v1.0
+
 
 A new Flutter project.
 
