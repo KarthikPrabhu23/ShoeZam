@@ -84,14 +84,32 @@ class _productState extends State<product> {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    ListTile(
-                      title: Text(
-                        'Nike',
-                        style: TextStyle(color: Colors.black, fontSize: 30),
-                      ),
-                      subtitle: Text(
-                        'Running shoes',
-                        style: TextStyle(color: Colors.black54, fontSize: 20),
+                    Padding(
+                      padding: const EdgeInsets.all(13.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Nike',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 30),
+                              ),
+                              Text(
+                                'Running shoes',
+                                style: TextStyle(
+                                    color: Colors.black54, fontSize: 20),
+                              ),
+                            ],
+                          ),
+                          Image.asset(
+                            'assets/b3.jpg',
+                            height: 60,
+                            width: 120,
+                          )
+                        ],
                       ),
                     ),
                     Container(

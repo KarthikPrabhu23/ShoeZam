@@ -229,10 +229,10 @@ class HomeScreen extends StatelessWidget {
                     brandImage: 'assets/b1.jpg',
                   ),
                   brandCard1(
-                    brandImage: 'assets/b1.jpg',
+                    brandImage: 'assets/b2.jpeg',
                   ),
                   brandCard1(
-                    brandImage: 'assets/b1.jpg',
+                    brandImage: 'assets/b3.jpg',
                   ),
                 ],
               ),
