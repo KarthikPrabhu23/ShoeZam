@@ -38,9 +38,9 @@ class HomeScreen extends StatelessWidget {
               radius: 23,
               backgroundColor: Col.IconBG,
               child: const Icon(
-                Icons.shopping_bag,
+                Icons.shopping_cart,
                 size: 22,
-                color: Colors.black,
+                color: Colors.black87,
               ),
             ),
           )

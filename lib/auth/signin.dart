@@ -69,7 +69,7 @@ class SignInState extends State<SignIn> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
-                      'Obsessed with Shoes?',
+                      '  Obsessed with Shoes?',
                       style:
                           TextStyle(fontWeight: FontWeight.w600, fontSize: 20,color: Colors.black54, ),
                     ),
