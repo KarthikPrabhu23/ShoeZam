@@ -9,10 +9,9 @@ class MyProfile extends StatelessWidget {
 
   Widget ListView({required IconData icon, required String title}) {
     return Column(
+      // crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Divider(
-          height: 1,
-        ),
         ListTile(
           leading: Icon(icon),
           title: Text(
@@ -21,6 +20,7 @@ class MyProfile extends StatelessWidget {
           ),
           trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
+       
       ],
     );
   }
@@ -80,7 +80,7 @@ class MyProfile extends StatelessWidget {
           ),
           Container(
             width: 380,
-            height: 500,
+            height:450,
             decoration: BoxDecoration(
               color: Colors.orange,
               borderRadius: BorderRadius.circular(40),
@@ -94,10 +94,11 @@ class MyProfile extends StatelessWidget {
               ],
             ),
             child: Padding(
-              padding: const EdgeInsets.all(9),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  // SizedBox(height: 8,),
                   ListView(icon: Icons.shopping_cart_sharp, title: 'My order'),
                   ListView(icon: Icons.location_on, title: 'My Address'),
                   ListView(icon: Icons.person, title: 'Refer a friend'),
