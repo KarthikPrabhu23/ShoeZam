@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       drawer: DrawerList(),
       appBar: AppBar(
         backgroundColor: Col.AppBarColor,
-        title: const Text('ShoeZam'),
+        title: const Text('ShoeZam!'),
         actions: [
           CircleAvatar(
             radius: 23,

@@ -26,92 +26,98 @@ class DrawerList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        width: 100,
+        width: 80,
         color: Col.HomeBGColor,
         child: ListView(
           children: [
-            DrawerHeader(
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.black45,
-                    radius: 40,
-                    child: CircleAvatar(
-                      backgroundColor: Colors.white24,
-                      backgroundImage: AssetImage("assets/sn3.png"),
-                      radius: 37,
+            Column(
+              children:[
+              SizedBox(
+                height: 230,
+                child: DrawerHeader(
+                  child: Column(children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.black45,
+                      radius: 48,
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white24,
+                        backgroundImage: AssetImage("assets/b2.jpeg"),
+                        radius: 45,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Welcome User,',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      Container(
-                        height: 20,
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          child: Text('Login'),
-                          // shape: RoundedRectangleBorder(
-                          //   borderRadius: BorderRadius.circular(
-                          //     29,
-                          //   ),
-                          // ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 17,
                         ),
-                      )
-                    ],
-                  )
+                        Text(
+                          'Welcome User,',
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(3.0),
+                          child: Container(
+                            height: 24,
+                            child: OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Login',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ]),
+                ),
+              ),
+              Column(
+                children: [
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
+                  listTile(
+                    icon: Icons.favorite,
+                    title: "Wishlist",
+                  ),
+                  listTile(
+                    icon: Icons.shopping_cart_rounded,
+                    title: "Cart",
+                  ),
+                  listTile(
+                    icon: Icons.notifications_active,
+                    title: "Notifications",
+                  ),
+                  listTile(
+                    icon: Icons.format_quote_rounded,
+                    title: "More info",
+                  ),
+                  listTile(
+                      icon: Icons.person,
+                      title: "My Profile",
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => MyProfile(),
+                          ),
+                        );
+                      }),
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
+                  listTile(
+                    icon: Icons.home,
+                    title: "Home",
+                  ),
                 ],
               ),
-            ),
-            Column(
-              children: [
-                listTile(
-                  icon: Icons.home,
-                  title: "Home",
-                ),
-                listTile(
-                  icon: Icons.favorite,
-                  title: "Wishlist",
-                ),
-                listTile(
-                  icon: Icons.shopping_cart_rounded,
-                  title: "Cart",
-                ),
-                listTile(
-                  icon: Icons.notifications_active,
-                  title: "Notifications",
-                ),
-                listTile(
-                  icon: Icons.format_quote_rounded,
-                  title: "More info",
-                ),
-                listTile(
-                    icon: Icons.person,
-                    title: "My Profile",
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => MyProfile(),
-                        ),
-                      );
-                    }),
-                listTile(
-                  icon: Icons.home,
-                  title: "Home",
-                ),
-                listTile(
-                  icon: Icons.home,
-                  title: "Home",
-                ),
               ],
             ),
           ],
