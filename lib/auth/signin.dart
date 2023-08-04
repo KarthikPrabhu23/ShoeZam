@@ -50,10 +50,12 @@ class SignInState extends State<SignIn> {
             fit: BoxFit.fitWidth,
 
             image: AssetImage(
-              'assets/hero.png', 
-              
+              'assets/hero.png',
             ),
-            colorFilter: ColorFilter.mode(Color.fromARGB(225, 255, 255, 255), BlendMode.modulate,),
+            colorFilter: ColorFilter.mode(
+              Colors.white,
+              BlendMode.modulate,
+            ),
             // height:300,
           ),
         ),
@@ -62,22 +64,27 @@ class SignInState extends State<SignIn> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              SizedBox(height: 10,),
               Container(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
+                    SizedBox(
+                      height: 100,
+                    ),
                     Text(
                       '  Obsessed with Shoes?',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w600, fontSize: 20,color: Colors.black54, ),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 20,
+                        color: Colors.black54,
+                      ),
                     ),
                     SizedBox(
                       height: 2,
                     ),
                     Text(
-                      'ShoeZam !',
+                      'ShoeZam!',
                       textAlign: TextAlign.center,
                       style:
                           TextStyle(fontWeight: FontWeight.w600, fontSize: 62),
@@ -85,10 +92,11 @@ class SignInState extends State<SignIn> {
                   ],
                 ),
               ),
-              SizedBox(height: 50,),
+              SizedBox(
+                height: 50,
+              ),
               Column(
                 children: [
-                  
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -107,10 +115,9 @@ class SignInState extends State<SignIn> {
                               const Text(
                                 'Sign in to continue',
                                 style: TextStyle(
-                                  fontSize: 23,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500
-                                ),
+                                    fontSize: 23,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500),
                               ),
                               // const SizedBox(height: 70),
                               // Text(
