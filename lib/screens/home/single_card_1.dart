@@ -35,17 +35,18 @@ class singleCard1 extends StatelessWidget {
                 height: 250,
                 width: 200,
                 decoration: BoxDecoration(
-                    border: Border.all(
-                        color: Color.fromARGB(255, 155, 155, 155), width: 1),
-                    borderRadius: BorderRadius.circular(20),
-                    color: Col.CardCol,
-                    boxShadow: const [
-                      BoxShadow(
-                          color: Color.fromARGB(221, 45, 45, 45),
-                          blurRadius: 13,
-                          spreadRadius: 0.1,
-                          blurStyle: BlurStyle.normal)
-                    ]),
+                  border: Border.all(
+                      color: Color.fromARGB(255, 155, 155, 155), width: 1),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Col.CardCol,
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Color.fromARGB(221, 45, 45, 45),
+                        blurRadius: 13,
+                        spreadRadius: 0.1,
+                        blurStyle: BlurStyle.normal)
+                  ],
+                ),
                 child: Padding(
                   padding:
                       const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
@@ -108,8 +109,9 @@ class singleCard1 extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(9),
                                       border: Border.all(
-                                          color: Color.fromARGB(
-                                              115, 170, 170, 170)),
+                                        color:
+                                            Color.fromARGB(115, 170, 170, 170),
+                                      ),
                                     ),
                                     child: Padding(
                                       padding: const EdgeInsets.only(left: 5.0),
@@ -139,7 +141,7 @@ class singleCard1 extends StatelessWidget {
                                   // const SizedBox(
                                   //   width: 55,
                                   // ),
-                                  
+
                                   CircleAvatar(
                                     radius: 16,
                                     backgroundColor: Col.IconBG,
