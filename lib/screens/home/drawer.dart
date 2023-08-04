@@ -1,14 +1,16 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
+import 'package:shop_flutter/screens/profile/my_profile.dart';
 
 class DrawerList extends StatelessWidget {
-  const DrawerList( {super.key});
+  const DrawerList({super.key});
 
-  
-  Widget listTile({required IconData icon, required String title}) {
+  Widget listTile(
+      {required IconData icon, required String title, VoidCallback? onTap}) {
     return ListTile(
+      onTap: onTap,
       leading: Icon(
         icon,
         size: 34,
@@ -23,93 +25,98 @@ class DrawerList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-        child : Container(
-          width: 100,
-          color: Col.HomeBGColor,
-          child: ListView(
-            children: [
-              DrawerHeader(
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.black45,
-                      radius: 40,
-                      child: CircleAvatar(
-                        backgroundColor: Colors.white24,
-                        backgroundImage: AssetImage("assets/sn3.png"),
-                        radius: 37,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Welcome User,',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 12,
-                        ),
-                        Container(
-                          height: 20,
-                          child: OutlinedButton(
-                            onPressed: () {},
-                            child: Text('Login'),
-                            // shape: RoundedRectangleBorder(
-                            //   borderRadius: BorderRadius.circular(
-                            //     29,
-                            //   ),
-                            // ),
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
-              Column(
+      child: Container(
+        width: 100,
+        color: Col.HomeBGColor,
+        child: ListView(
+          children: [
+            DrawerHeader(
+              child: Row(
                 children: [
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
+                  CircleAvatar(
+                    backgroundColor: Colors.black45,
+                    radius: 40,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white24,
+                      backgroundImage: AssetImage("assets/sn3.png"),
+                      radius: 37,
+                    ),
                   ),
-                  listTile(
-                    icon: Icons.favorite,
-                    title: "Wishlist",
+                  SizedBox(
+                    width: 20,
                   ),
-                  listTile(
-                    icon: Icons.shopping_cart_rounded,
-                    title: "Cart",
-                  ),
-                  listTile(
-                    icon: Icons.notifications_active,
-                    title: "Notifications",
-                  ),
-                  listTile(
-                    icon: Icons.format_quote_rounded,
-                    title: "More info",
-                  ),
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
-                  listTile(
-                    icon: Icons.home,
-                    title: "Home",
-                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Welcome User,',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Container(
+                        height: 20,
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          child: Text('Login'),
+                          // shape: RoundedRectangleBorder(
+                          //   borderRadius: BorderRadius.circular(
+                          //     29,
+                          //   ),
+                          // ),
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
-            ],
-          ),
+            ),
+            Column(
+              children: [
+                listTile(
+                  icon: Icons.home,
+                  title: "Home",
+                ),
+                listTile(
+                  icon: Icons.favorite,
+                  title: "Wishlist",
+                ),
+                listTile(
+                  icon: Icons.shopping_cart_rounded,
+                  title: "Cart",
+                ),
+                listTile(
+                  icon: Icons.notifications_active,
+                  title: "Notifications",
+                ),
+                listTile(
+                  icon: Icons.format_quote_rounded,
+                  title: "More info",
+                ),
+                listTile(
+                    icon: Icons.person,
+                    title: "My Profile",
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => MyProfile(),
+                        ),
+                      );
+                    }),
+                listTile(
+                  icon: Icons.home,
+                  title: "Home",
+                ),
+                listTile(
+                  icon: Icons.home,
+                  title: "Home",
+                ),
+              ],
+            ),
+          ],
         ),
+      ),
     );
-     
   }
 }

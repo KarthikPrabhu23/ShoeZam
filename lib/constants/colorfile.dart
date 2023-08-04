@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class Col {
   // Homescreen.dart
-  static Color AppBarColor = const Color.fromARGB(180, 73, 70, 68);
+  static Color AppBarColor = const Color.fromARGB(27, 73, 70, 68);
   static Color IconBG = const Color.fromARGB(217, 186, 186, 186);
   static Color TopCard = const Color.fromARGB(245, 255, 247, 21);
   static Color HomeBGColor = const Color.fromARGB(255, 175, 173, 173);
