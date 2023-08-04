@@ -144,9 +144,9 @@ class singleCard1 extends StatelessWidget {
 
                                   CircleAvatar(
                                     radius: 16,
-                                    backgroundColor: Col.IconBG,
+                                    backgroundColor: Colors.white70,
                                     child: const Icon(
-                                      Icons.info,
+                                      Icons.arrow_forward_ios_rounded,
                                       size: 20,
                                       color: Color.fromARGB(255, 31, 11, 119),
                                     ),
