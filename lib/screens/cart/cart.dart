@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, camel_case_types
+// ignore_for_file: prefer_const_constructors, camel_case_types, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';

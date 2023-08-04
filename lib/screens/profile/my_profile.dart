@@ -20,7 +20,6 @@ class MyProfile extends StatelessWidget {
           ),
           trailing: Icon(Icons.arrow_forward_ios_rounded),
         ),
-       
       ],
     );
   }
@@ -30,6 +29,7 @@ class MyProfile extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepPurpleAccent,
       appBar: AppBar(
+        backgroundColor:  Colors.deepPurpleAccent,
         title: Text(
           'My Account',
           style: TextStyle(

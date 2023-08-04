@@ -41,10 +41,11 @@ class singleCard1 extends StatelessWidget {
                   color: Col.CardCol,
                   boxShadow: const [
                     BoxShadow(
-                        color: Color.fromARGB(221, 45, 45, 45),
-                        blurRadius: 13,
-                        spreadRadius: 0.1,
-                        blurStyle: BlurStyle.normal)
+                      color: Color.fromARGB(221, 45, 45, 45),
+                      blurRadius: 13,
+                      spreadRadius: 0.1,
+                      blurStyle: BlurStyle.normal,
+                    ),
                   ],
                 ),
                 child: Padding(
@@ -87,15 +88,17 @@ class singleCard1 extends StatelessWidget {
                               Text(
                                 shoeTitle,
                                 style: TextStyle(
-                                    color: Col.CardText1,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
+                                  color: Col.CardText1,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
                               ),
                               Text(
                                 shoeTitle2,
                                 style: TextStyle(
-                                    color: Col.CardText2,
-                                    fontWeight: FontWeight.w300),
+                                  color: Col.CardText2,
+                                  fontWeight: FontWeight.w300,
+                                ),
                               ),
                               const SizedBox(height: 5),
                               Row(
@@ -141,7 +144,6 @@ class singleCard1 extends StatelessWidget {
                                   // const SizedBox(
                                   //   width: 55,
                                   // ),
-
                                   CircleAvatar(
                                     radius: 16,
                                     backgroundColor: Colors.white70,

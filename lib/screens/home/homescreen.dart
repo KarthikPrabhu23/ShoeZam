@@ -7,6 +7,7 @@ import 'package:shop_flutter/screens/home/drawer.dart';
 import 'package:shop_flutter/screens/home/single_card_1.dart';
 import 'package:shop_flutter/screens/home/brand_card_1.dart';
 import 'package:shop_flutter/screens/product/product.dart';
+import 'package:shop_flutter/screens/search/search_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -23,10 +24,19 @@ class HomeScreen extends StatelessWidget {
           CircleAvatar(
             radius: 23,
             backgroundColor: Col.IconBG,
-            child: const Icon(
-              Icons.search,
-              size: 22,
-              color: Colors.black,
+            child: IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => searchPage(),
+                  ),
+                );
+              },
+              icon: Icon(
+                Icons.search,
+                size: 22,
+                color: Colors.black,
+              ),
             ),
           ),
           const SizedBox(
