@@ -35,14 +35,15 @@ class singleCard1 extends StatelessWidget {
                 height: 250,
                 width: 200,
                 decoration: BoxDecoration(
+                    border: Border.all(color: Color.fromARGB(255, 155, 155, 155), width: 1),
                     borderRadius: BorderRadius.circular(20),
                     color: Col.CardCol,
                     boxShadow: const [
                       BoxShadow(
-                          color: Colors.black87,
+                          color: Color.fromARGB(221, 45, 45, 45),
                           blurRadius: 13,
                           spreadRadius: 0.1,
-                          blurStyle: BlurStyle.outer)
+                          blurStyle: BlurStyle.normal)
                     ]),
                 child: Padding(
                   padding:
