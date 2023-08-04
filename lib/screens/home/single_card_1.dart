@@ -35,7 +35,8 @@ class singleCard1 extends StatelessWidget {
                 height: 250,
                 width: 200,
                 decoration: BoxDecoration(
-                    border: Border.all(color: Color.fromARGB(255, 155, 155, 155), width: 1),
+                    border: Border.all(
+                        color: Color.fromARGB(255, 155, 155, 155), width: 1),
                     borderRadius: BorderRadius.circular(20),
                     color: Col.CardCol,
                     boxShadow: const [
@@ -86,7 +87,8 @@ class singleCard1 extends StatelessWidget {
                                 shoeTitle,
                                 style: TextStyle(
                                     color: Col.CardText1,
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
                               ),
                               Text(
                                 shoeTitle2,
@@ -97,55 +99,54 @@ class singleCard1 extends StatelessWidget {
                               const SizedBox(height: 5),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Expanded(
-                                    child: Container(
-                                      height: 30,
-                                      width: 50,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(9),
-                                        border:
-                                            Border.all(color: Colors.black45),
-                                      ),
-                                      child: Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 5.0),
-                                        child: Row(
-                                          children: [
-                                            Expanded(
-                                              child: Text(
-                                                shoeCost,
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                  fontWeight: FontWeight.w500,
-                                                  color: Colors.white,
-                                                ),
+                                  Container(
+                                    height: 30,
+                                    width: 80,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(9),
+                                      border: Border.all(
+                                          color: Color.fromARGB(
+                                              115, 170, 170, 170)),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(left: 5.0),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Text(
+                                              shoeCost,
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w500,
+                                                color: Colors.white,
                                               ),
                                             ),
-                                            // Center(
-                                            //   child: Icon(
-                                            //     Icons.arrow_drop_down,
-                                            //     size: 23,
-                                            //     color: Colors.white,
-                                            //   ),
-                                            // )
-                                          ],
-                                        ),
+                                          ),
+                                          // Center(
+                                          //   child: Icon(
+                                          //     Icons.arrow_drop_down,
+                                          //     size: 23,
+                                          //     color: Colors.white,
+                                          //   ),
+                                          // )
+                                        ],
                                       ),
                                     ),
                                   ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      height: 30,
-                                      width: 30,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(9),
-                                        border:
-                                            Border.all(color: Colors.black45),
-                                      ),
+                                  // const SizedBox(
+                                  //   width: 55,
+                                  // ),
+                                  
+                                  CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Col.IconBG,
+                                    child: const Icon(
+                                      Icons.info,
+                                      size: 20,
+                                      color: Color.fromARGB(255, 31, 11, 119),
                                     ),
                                   ),
                                 ],
