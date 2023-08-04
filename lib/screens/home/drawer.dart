@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
+import 'package:shop_flutter/screens/cart/cart.dart';
 import 'package:shop_flutter/screens/home/homescreen.dart';
 import 'package:shop_flutter/screens/profile/my_profile.dart';
 
@@ -108,7 +109,7 @@ class DrawerList extends StatelessWidget {
                       onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (context) => MyProfile(),
+                            builder: (context) => cart(),
                           ),
                         );
                       },
