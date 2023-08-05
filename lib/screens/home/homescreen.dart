@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
 import 'package:shop_flutter/constants/stringfile.dart';
+import 'package:shop_flutter/screens/cart/cart.dart';
 import 'package:shop_flutter/screens/home/drawer.dart';
 import 'package:shop_flutter/screens/home/single_card_1.dart';
 import 'package:shop_flutter/screens/home/brand_card_1.dart';
@@ -47,10 +48,19 @@ class HomeScreen extends StatelessWidget {
             child: CircleAvatar(
               radius: 23,
               backgroundColor: Col.IconBG,
-              child: const Icon(
-                Icons.shopping_cart,
-                size: 22,
-                color: Colors.black87,
+              child: IconButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => cart(),
+                    ),
+                  );
+                },
+                icon: Icon(
+                  Icons.shopping_cart,
+                  size: 22,
+                  color: Colors.black,
+                ),
               ),
             ),
           )

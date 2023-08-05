@@ -12,9 +12,8 @@ import 'package:shop_flutter/screens/home/brand_card_1.dart';
 import 'package:shop_flutter/screens/product/product.dart';
 import 'package:shop_flutter/screens/search/search_page.dart';
 
-class singleItem extends StatelessWidget {
-//  final bool isCart = false;
-  const singleItem({super.key});
+class cartItem extends StatelessWidget {
+  const cartItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +57,7 @@ class singleItem extends StatelessWidget {
               child: Container(
                 height: 100,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Column(
@@ -124,31 +123,49 @@ class singleItem extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: Container(
-                height: 100,
-                padding: EdgeInsets.symmetric(
-                  vertical: 22,
-                  horizontal: 13,
-                ),
-                child: CircleAvatar(
-                  radius: 18,
-                  backgroundColor: Color.fromARGB(179, 108, 255, 75),
-                  child: IconButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => cart(),
-                        ),
-                      );
-                    },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    color: const Color.fromARGB(111, 244, 67, 54),
+                    onPressed: () {},
                     icon: Icon(
-                      Icons.add,
+                      Icons.delete,
                       size: 22,
                       color: Colors.black,
                     ),
                   ),
-                ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      IconButton(
+                        color: const Color.fromARGB(111, 244, 67, 54),
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.remove,
+                          size: 22,
+                          color: Colors.black,
+                        ),
+                      ),
+                      IconButton(
+                        color: const Color.fromARGB(111, 244, 67, 54),
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.add,
+                          size: 22,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
+            ),
+            Divider(
+              height: 1,
+              color: Colors.black54,
             ),
           ],
         ),
