@@ -149,6 +149,13 @@ class cartItem extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
+                      Text(
+                        '1',
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                       IconButton(
                         color: const Color.fromARGB(111, 244, 67, 54),
                         onPressed: () {},
