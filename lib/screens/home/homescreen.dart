@@ -71,191 +71,36 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
                 singleCard1(
-                  shoeImage: 'assets/sn3.png',
-                  shoeTitle: 'Adidas',
-                  shoeTitle2: 'Slippers shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sn3.png',
-                            brandLogo: 'assets/b2.jpeg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
-                singleCard1(
                   shoeImage: 'assets/sn2.png',
-                  shoeTitle: 'Yeezy',
-                  shoeTitle2: 'Slippers shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
-                singleCard1(
-                  shoeImage: 'assets/sp11.png',
-                  shoeTitle: 'Reebok',
-                  shoeTitle2: 'Jogging shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
-                singleCard1(
-                  shoeImage: 'assets/sp22.png',
-                  shoeTitle: 'Sketchers',
-                  shoeTitle2: 'Formal shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
-                singleCard1(
-                  shoeImage: 'assets/sp3.png',
-                  shoeTitle: 'Puma',
-                  shoeTitle2: 'Running shoes',
-                  shoeCost: '₹14,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Puma',
-                            proImage: 'assets/sp3.png',
-                            brandLogo: 'assets/b1.jpg',
-                            proPrice: '₹14,000',
-                            proDesc: Def.descP),
-                      ),
-                    );
-                  },
-                ),
-                singleCard1(
-                  shoeImage: 'assets/sn11.png',
-                  shoeTitle: 'Adidas',
-                  shoeTitle2: 'Walking shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _runShoes(context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
-              Text(
-                'Running shoes',
-                style: TextStyle(color: Colors.black87, fontSize: 20),
-              ),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                singleCard1(
-                  shoeImage: 'assets/sn11.png',
                   shoeTitle: 'Nike',
-                  shoeTitle2: 'Running shoes',
-                  shoeCost: '₹13,000',
+                  shoeTitle2: 'Strap shoes',
+                  shoeCost: '₹23,000',
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => product(
                             proName: 'Nike',
-                            proImage: 'assets/sn11.png',
+                            proImage: 'assets/sn2.png',
                             brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹13,000',
+                            proPrice: '₹23,000',
                             proDesc: Def.descN),
                       ),
                     );
                   },
                 ),
                 singleCard1(
-                  shoeImage: 'assets/sn2.png',
-                  shoeTitle: 'Yeezy',
-                  shoeTitle2: 'Slippers shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
-                singleCard1(
                   shoeImage: 'assets/sp11.png',
-                  shoeTitle: 'Reebok',
+                  shoeTitle: 'Puma',
                   shoeTitle2: 'Jogging shoes',
-                  shoeCost: '₹23,000',
+                  shoeCost: '₹9,000',
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => product(
-                            proName: 'Nike',
+                            proName: 'Puma',
                             proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
+                            brandLogo: 'assets/b1.jpg',
+                            proPrice: '₹9,000',
                             proDesc: Def.descA),
                       ),
                     );
@@ -263,17 +108,17 @@ class HomeScreen extends StatelessWidget {
                 ),
                 singleCard1(
                   shoeImage: 'assets/sp22.png',
-                  shoeTitle: 'Sketchers',
-                  shoeTitle2: 'Formal shoes',
-                  shoeCost: '₹23,000',
+                  shoeTitle: 'Adidas',
+                  shoeTitle2: 'Running shoes',
+                  shoeCost: '₹12,000',
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
+                            proName: 'Adidas',
+                            proImage: 'assets/sp22.png',
+                            brandLogo: 'assets/b2.jpeg',
+                            proPrice: '₹12,000',
                             proDesc: Def.descA),
                       ),
                     );
@@ -297,24 +142,6 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
-                singleCard1(
-                  shoeImage: 'assets/sn11.png',
-                  shoeTitle: 'Adidas',
-                  shoeTitle2: 'Walking shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
               ],
             ),
           ),
@@ -322,8 +149,6 @@ class HomeScreen extends StatelessWidget {
       ],
     );
   }
-
-  // Widget _runningShoes(context) {}
 
   Widget _brandScroll(context) {
     return Column(
@@ -369,6 +194,89 @@ class HomeScreen extends StatelessWidget {
                 brandImage: 'assets/b3.jpg',
               ),
             ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _runShoes(context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: const [
+              Text(
+                'Running shoes',
+                style: TextStyle(color: Colors.black87, fontSize: 20),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5),
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                singleCard1(
+                  shoeImage: 'assets/sn2.png',
+                  shoeTitle: 'Nike',
+                  shoeTitle2: 'Running shoes',
+                  shoeCost: '₹14,000',
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => product(
+                            proName: 'Nike',
+                            proImage: 'assets/sn2.png',
+                            brandLogo: 'assets/b3.jpg',
+                            proPrice: '₹14,000',
+                            proDesc: Def.descN),
+                      ),
+                    );
+                  },
+                ),
+                singleCard1(
+                  shoeImage: 'assets/sp22.png',
+                  shoeTitle: 'Puma',
+                  shoeTitle2: 'Running shoes',
+                  shoeCost: '₹11,000',
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => product(
+                            proName: 'Puma',
+                            proImage: 'assets/sp22.png',
+                            brandLogo: 'assets/b3.jpg',
+                            proPrice: '₹11,000',
+                            proDesc: Def.descP),
+                      ),
+                    );
+                  },
+                ),
+                singleCard1(
+                  shoeImage: 'assets/sp3.png',
+                  shoeTitle: 'Adidas',
+                  shoeTitle2: 'Running shoes',
+                  shoeCost: '₹14,000',
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => product(
+                            proName: 'Adidas',
+                            proImage: 'assets/sp3.png',
+                            brandLogo: 'assets/b2.jpeg',
+                            proPrice: '₹14,000',
+                            proDesc: Def.descA),
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ],
@@ -435,6 +343,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 height: 160,
+                width: 370,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Col.TopCard,
