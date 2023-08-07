@@ -124,24 +124,7 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
-                singleCard1(
-                  shoeImage: 'assets/sp22.png',
-                  shoeTitle: 'Nike',
-                  shoeTitle2: 'Running shoes',
-                  shoeCost: '₹23,000',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => product(
-                            proName: 'Nike',
-                            proImage: 'assets/sp11.png',
-                            brandLogo: 'assets/b3.jpg',
-                            proPrice: '₹3,000',
-                            proDesc: Def.descA),
-                      ),
-                    );
-                  },
-                ),
+            
                 singleCard1(
                   shoeImage: 'assets/sp22.png',
                   shoeTitle: 'Sketchers',
