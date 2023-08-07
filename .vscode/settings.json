@@ -1,5 +1,5 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.configuration.updateBuildConfiguration": "disabled",
     "cmake.configureOnOpen": true,
     "dart.flutterSdkPath": "C:\\flutter",
     "dart.flutterSdkPaths": [
