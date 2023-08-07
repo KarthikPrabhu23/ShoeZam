@@ -124,7 +124,6 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
-            
                 singleCard1(
                   shoeImage: 'assets/sp22.png',
                   shoeTitle: 'Sketchers',
@@ -186,7 +185,6 @@ class HomeScreen extends StatelessWidget {
       ],
     );
   }
-
 
   Widget _runShoes(context) {
     return Column(
@@ -263,7 +261,6 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
-                
                 singleCard1(
                   shoeImage: 'assets/sp22.png',
                   shoeTitle: 'Sketchers',
@@ -433,24 +430,26 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-        child: Column(
-          children: [
-            Container(
-              height: 160,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Col.TopCard,
-                image:
-                    const DecorationImage(image: AssetImage('assets/man2.png')),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 160,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Col.TopCard,
+                  image: const DecorationImage(
+                      image: AssetImage('assets/man2.png')),
+                ),
               ),
-            ),
-            _allShoes(context),
-            _brandScroll(context),
-            _runShoes(context),
-            SizedBox(
-              height: 7,
-            ),
-          ],
+              _allShoes(context),
+              _brandScroll(context),
+              _runShoes(context),
+              SizedBox(
+                height: 7,
+              ),
+            ],
+          ),
         ),
       ),
     );
