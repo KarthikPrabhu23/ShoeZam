@@ -51,51 +51,60 @@ class _cartState extends State<cart> {
         ),
       ),
       drawer: DrawerList(),
-      body: 
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 10,
-                ),
-                cartItem(),
-                cartItem(),
-                cartItem(),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    // ListTile(
-                    //   title: Text('Total'),
-                    //   subtitle: Text(
-                    //     '₹12,000',
-                    //     style: TextStyle(
-                    //         color: Colors.black,
-                    //         fontSize: 15,
-                    //         fontWeight: FontWeight.w500),
-                    //   ),
-                    //   trailing: Container(
-                    //     width: 150,
-                    //     decoration: BoxDecoration(),
-                    //     child: MaterialButton(
-                    //       shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.circular(30),
-                    //       ),
-                    //       color: Colors.green,
-                    //       onPressed: () {},
-                    //       child: Text('Submit'),
-                    //     ),
-                    //   ),
-                    // ),
-                  ],
-                ),
-              ],
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+            height: 690,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 10,
+                  ),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  cartItem(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
+              ),
             ),
           ),
-        
+          ListTile(
+            title: Text('Total'),
+            subtitle: Text(
+              '₹12,000',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500),
+            ),
+            trailing: Container(
+              width: 150,
+              decoration: BoxDecoration(),
+              child: MaterialButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                color: Colors.green,
+                onPressed: () {},
+                child: Text('Submit'),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

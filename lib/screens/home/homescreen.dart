@@ -291,8 +291,9 @@ class HomeScreen extends StatelessWidget {
         drawer: DrawerList(),
         appBar: AppBar(
           backgroundColor: Col.AppBarColor,
+          centerTitle:true,
           
-          title: const Text('       ShoeZam!',style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold),),
+          title: const Text('ShoeZam!',style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold),),
     
         ),
         body: Padding(
