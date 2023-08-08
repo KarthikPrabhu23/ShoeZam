@@ -46,7 +46,7 @@ class _homeNavState extends State<homeNav> {
       extendBody: true,
       backgroundColor: Colors.transparent,
       bottomNavigationBar: CurvedNavigationBar(
-        color: Color.fromARGB(155, 7, 123, 255),
+        color: Color.fromARGB(225, 7, 123, 255),
         buttonBackgroundColor: Color.fromARGB(255, 11, 43, 99),
 
         backgroundColor: Colors.transparent,

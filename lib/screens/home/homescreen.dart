@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
@@ -285,36 +285,39 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Col.HomeBGColor,
-      drawer: DrawerList(),
-      appBar: AppBar(
-        backgroundColor: Col.AppBarColor,
-        title: const Text('ShoeZam!', textAlign: TextAlign.center,),
-
-      ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: 160,
-                width: 370,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Col.TopCard,
-                  image: const DecorationImage(
-                      image: AssetImage('assets/man2.png')),
+    return Center(
+      child: Scaffold(
+        backgroundColor: Col.HomeBGColor,
+        drawer: DrawerList(),
+        appBar: AppBar(
+          backgroundColor: Col.AppBarColor,
+          
+          title: const Text('       ShoeZam!',style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold),),
+    
+        ),
+        body: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Container(
+                  height: 160,
+                  width: 370,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Col.TopCard,
+                    image: const DecorationImage(
+                        image: AssetImage('assets/man2.png')),
+                  ),
                 ),
-              ),
-              _allShoes(context),
-              _brandScroll(context),
-              _runShoes(context),
-              SizedBox(
-                height: 60,
-              ),
-            ],
+                _allShoes(context),
+                _brandScroll(context),
+                _runShoes(context),
+                SizedBox(
+                  height: 60,
+                ),
+              ],
+            ),
           ),
         ),
       ),
