@@ -1,12 +1,10 @@
-// ignore_for_file: unused_import, file_names, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+
+// ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
-import 'package:shop_flutter/constants/stringfile.dart';
 import 'package:shop_flutter/screens/home/drawer.dart';
-import 'package:shop_flutter/screens/home/single_card_1.dart';
-import 'package:shop_flutter/screens/home/brand_card_1.dart';
-import 'package:shop_flutter/screens/product/product.dart';
 import 'package:shop_flutter/widgets/single_item.dart';
 
 class searchPage extends StatelessWidget {
@@ -37,7 +35,7 @@ class searchPage extends StatelessWidget {
       body: Column(
         children: [
           
-          SizedBox(height: 15,),
+          const SizedBox(height: 15,),
           Container(
             height: 55,
             margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -54,12 +52,12 @@ class searchPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 15,),
-          Container(
+          const SizedBox(height: 15,),
+          SizedBox(
             height: 680,
             child: ListView(
               
-              children: [
+              children: const [
                 SingleChildScrollView(
                   child: Column(
                     children: [
