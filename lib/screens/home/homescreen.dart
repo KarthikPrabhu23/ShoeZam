@@ -151,52 +151,55 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _brandScroll(context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 7),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
-              Text(
-                'Our Partners',
-                style: TextStyle(color: Colors.black87, fontSize: 15),
-              ),
-            ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 15),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  'Our Partners',
+                  style: TextStyle(color: Colors.black87, fontSize: 15),
+                ),
+              ],
+            ),
           ),
-        ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              brandCard1(
-                brandImage: 'assets/b1.jpg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b2.jpeg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b3.jpg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b2.jpeg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b3.jpg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b1.jpg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b2.jpeg',
-              ),
-              brandCard1(
-                brandImage: 'assets/b3.jpg',
-              ),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                brandCard1(
+                  brandImage: 'assets/b1.jpg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b2.jpeg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b3.jpg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b2.jpeg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b3.jpg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b1.jpg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b2.jpeg',
+                ),
+                brandCard1(
+                  brandImage: 'assets/b3.jpg',
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 
@@ -291,16 +294,20 @@ class HomeScreen extends StatelessWidget {
         drawer: DrawerList(),
         appBar: AppBar(
           backgroundColor: Col.AppBarColor,
-          centerTitle:true,
-          
-          title: const Text('ShoeZam!',style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold),),
-    
+          centerTitle: true,
+          title: const Text(
+            'ShoeZam!',
+            style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold),
+          ),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
           child: SingleChildScrollView(
             child: Column(
               children: [
+                SizedBox(
+                  height: 15,
+                ),
                 Container(
                   height: 160,
                   width: 370,
@@ -308,14 +315,32 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     color: Col.TopCard,
                     image: const DecorationImage(
-                        image: AssetImage('assets/man2.png')),
+                      image: AssetImage('assets/man2.png'),
+                    ),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(221, 45, 45, 45),
+                        blurRadius: 13,
+                        spreadRadius: 0.1,
+                        blurStyle: BlurStyle.normal,
+                      ),
+                    ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 _allShoes(context),
+                SizedBox(
+                  height: 10,
+                ),
                 _brandScroll(context),
+                SizedBox(
+                  height: 10,
+                ),
                 _runShoes(context),
                 SizedBox(
-                  height: 60,
+                  height: 80,
                 ),
               ],
             ),

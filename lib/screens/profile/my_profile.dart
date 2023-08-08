@@ -51,10 +51,10 @@ class MyProfile extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 73,
-                  backgroundColor: const Color.fromARGB(255, 204, 177, 177),
+                  backgroundColor: Colors.black54,
                   child: CircleAvatar(
                     radius: 68,
-                    backgroundImage: AssetImage("assets/b2.jpeg"),
+                    backgroundImage: AssetImage("assets/dp.jpeg"),
                   ),
                 ),
                 SizedBox(
@@ -65,14 +65,14 @@ class MyProfile extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w600,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 Text(
                   'karthikprabhu@gmail.com',
                   style: TextStyle(
                     fontWeight: FontWeight.w300,
-                    color: Colors.white,
+                    color: Colors.black87,
                   ),
                 ),
               ],

@@ -150,7 +150,7 @@ class singleCard1 extends StatelessWidget {
                                     child: const Icon(
                                       Icons.arrow_forward_ios_rounded,
                                       size: 20,
-                                      color: Color.fromARGB(255, 31, 11, 119),
+                                      color: Color.fromARGB(255, 119, 111, 156),
                                     ),
                                   ),
                                 ],

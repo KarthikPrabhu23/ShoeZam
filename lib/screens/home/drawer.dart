@@ -43,7 +43,7 @@ class DrawerList extends StatelessWidget {
                         radius: 48,
                         child: CircleAvatar(
                           // backgroundColor: Col.AppColor2,
-                          backgroundImage: AssetImage("assets/b2.jpeg"),
+                          backgroundImage: AssetImage("assets/dp.jpeg"),
                           radius: 45,
                         ),
                       ),
@@ -64,12 +64,22 @@ class DrawerList extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(3.0),
                             child: Container(
-                              height: 24,
+                              height: 34,
                               child: OutlinedButton(
+                                style: OutlinedButton.styleFrom(
+                                  
+                                  side: BorderSide(
+                                      width: 2, color: const Color.fromARGB(255, 255, 255, 255)),
+                                ),
                                 onPressed: () {},
-                                child: Text(
-                                  'Login',
-                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(3.0),
+                                  child: Text(
+                                    'Login',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w500),
+                                  ),
                                 ),
                               ),
                             ),
