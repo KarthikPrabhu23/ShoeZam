@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, camel_case_types, unused_import, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, camel_case_types, unused_import, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
@@ -56,7 +56,7 @@ class _cartState extends State<cart> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            height: 690,
+            height: 610,
             child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Column(
@@ -103,6 +103,7 @@ class _cartState extends State<cart> {
               ),
             ),
           ),
+          SizedBox(height: 75,),
         ],
       ),
     );

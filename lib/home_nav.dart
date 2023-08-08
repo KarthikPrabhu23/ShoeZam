@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, prefer_const_constructors
+// ignore_for_file: unused_import, prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +25,33 @@ class _homeNavState extends State<homeNav> {
     HomeScreen(),
     searchPage(),
     MyProfile(),
+  ];
+
+  // final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
+
+  final list = [
+    cart(),
+    HomeScreen(),
+    HomeScreen(),
+    searchPage(),
+    MyProfile(),
+  ];
+
+  void onTap(int index) {
+    if (currindex != index) {
+      setState(() {
+        currindex = index;
+      });
+    }
+  }
+
+  final bottomNavigationBarItems = const [
+    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+    BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet), label: 'Pay Screen'),
+    BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet), label: 'Pay Screen'),
+    BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet), label: 'Pay Screen'),
+    BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet), label: 'Pay Screen'),
+
   ];
 
   @override
@@ -56,22 +83,70 @@ class _homeNavState extends State<homeNav> {
         color: Colors.white,
       ),
     ];
-    return Scaffold(
-      extendBody: true,
-      backgroundColor: Colors.transparent,
-      bottomNavigationBar: currindex == 0
-          ? null
-          : CurvedNavigationBar(
-              color: Color.fromARGB(234, 7, 123, 255),
-              buttonBackgroundColor: Color.fromARGB(255, 11, 43, 99),
+    return WillPopScope(
+      child: SafeArea(
+        child: Scaffold(
+          extendBody: true,
+          backgroundColor: Colors.transparent,
+          bottomNavigationBar:  CurvedNavigationBar(
+                  color: Color.fromARGB(234, 7, 123, 255),
+                  buttonBackgroundColor: Color.fromARGB(255, 11, 43, 99),
+                  backgroundColor: Colors.transparent,
+                  index: currindex,
+                  height: 60,
+                  items: items,
+                  onTap: onTap,
+                  // currentIndex: currindex,
+                ),
+          body: IndexedStack(index: currindex, children: list),
+          // bottomNavigationBar: _bottomNavigationBar(),
 
-              backgroundColor: Colors.transparent,
-              index: currindex,
-              height: 60,
-              items: items,
-              onTap: (index) => setState(() => this.currindex = index),
-            ),
-      body: screens[currindex],
+          // onTap: onTap,
+          // items: bottomNavigationBarItems,
+        ),
+      ),
+      onWillPop: () async {
+        // You can define custom conditions to determine whether to allow the page to pop or perform a different action.
+        return currindex == 2;
+      },
     );
   }
+
+  // _onTap(int tabIndex) {
+  //   if (tabIndex == currindex) return;
+
+  //   switch (tabIndex) {
+  //     case 0:
+  //       currindex == 2
+  //           ? _navigatorKey.currentState?.pushNamed("cart")
+  //           : _navigatorKey.currentState?.pushReplacementNamed("cart");
+  //       break;
+  //     case 1:
+  //       currindex == 2
+  //           ? _navigatorKey.currentState?.pushNamed("home")
+  //           : _navigatorKey.currentState?.pushReplacementNamed("home");
+  //       break;
+  //     case 2:
+  //       currindex == 2
+  //           ? _navigatorKey.currentState?.pushNamed("home")
+  //           : _navigatorKey.currentState?.pushReplacementNamed("home");
+  //       break;
+  //     case 3:
+  //       currindex == 2
+  //           ? _navigatorKey.currentState?.pushNamed("search")
+  //           : _navigatorKey.currentState?.pushReplacementNamed("search");
+  //       break;
+  //     case 4:
+  //       currindex == 2
+  //           ? _navigatorKey.currentState?.pushNamed("profile")
+  //           : _navigatorKey.currentState?.pushReplacementNamed("profile");
+  //       break;
+  //   }
+  //   setState(
+  //     () {
+  //       currindex = tabIndex;
+  //     },
+  //   );
+  // }
+
 }
