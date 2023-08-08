@@ -290,51 +290,8 @@ class HomeScreen extends StatelessWidget {
       drawer: DrawerList(),
       appBar: AppBar(
         backgroundColor: Col.AppBarColor,
-        title: const Text('ShoeZam!'),
-        actions: [
-          CircleAvatar(
-            radius: 23,
-            backgroundColor: Col.IconBG,
-            child: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => searchPage(),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.search,
-                size: 22,
-                color: Colors.black,
-              ),
-            ),
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18.0),
-            child: CircleAvatar(
-              radius: 23,
-              backgroundColor: Col.IconBG,
-              child: IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => cart(),
-                    ),
-                  );
-                },
-                icon: Icon(
-                  Icons.shopping_cart,
-                  size: 22,
-                  color: Colors.black,
-                ),
-              ),
-            ),
-          )
-        ],
+        title: const Text('ShoeZam!', textAlign: TextAlign.center,),
+
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
