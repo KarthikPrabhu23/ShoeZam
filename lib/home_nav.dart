@@ -36,18 +36,18 @@ class _homeNavState extends State<homeNav> {
   @override
   Widget build(BuildContext context) {
     const items = <Widget>[
-      Icon(Icons.shopping_cart, size: 30),
-      Icon(Icons.favorite, size: 30),
-      Icon(Icons.home, size: 30),
-      Icon(Icons.search, size: 30),
-      Icon(Icons.person, size: 30),
+      Icon(Icons.shopping_cart, size: 30, color: Colors.white,),
+      Icon(Icons.favorite, size: 30, color: Colors.white,),
+      Icon(Icons.home, size: 30, color: Colors.white,),
+      Icon(Icons.search, size: 30, color: Colors.white,),
+      Icon(Icons.person, size: 30, color: Colors.white,),
     ];
     return Scaffold(
       extendBody: true,
       backgroundColor: Colors.transparent,
       bottomNavigationBar: CurvedNavigationBar(
-        color: Color.fromARGB(99, 255, 193, 7),
-        buttonBackgroundColor: Colors.blueAccent,
+        color: Color.fromARGB(155, 7, 123, 255),
+        buttonBackgroundColor: Color.fromARGB(255, 11, 43, 99),
 
         backgroundColor: Colors.transparent,
         index: index,
