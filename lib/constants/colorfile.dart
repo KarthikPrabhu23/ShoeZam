@@ -7,7 +7,7 @@ class Col {
   static Color AppBarColor = const Color.fromARGB(27, 73, 70, 68);
   static Color IconBG = const Color.fromARGB(217, 186, 186, 186);
   static Color TopCard = const Color.fromARGB(245, 96, 114, 220);
-  static Color HomeBGColor = const Color.fromARGB(255, 175, 173, 173);
+  static Color HomeBGColor = Color.fromARGB(255, 228, 225, 225);
   static Color CardCol = const Color.fromARGB(122, 53, 37, 231);
   static Color CardText1 = Colors.white;
   static Color CardText2 = const Color.fromARGB(201, 255, 255, 255);

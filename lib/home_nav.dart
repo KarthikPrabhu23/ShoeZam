@@ -69,8 +69,8 @@ class _homeNavState extends State<homeNav> {
       ),
       Icon(
         Icons.home,
-        size: 30,
-        color: Color.fromARGB(255, 255, 255, 255),
+        size: 50,
+        color: Colors.white,
       ),
       Icon(
         Icons.search,
@@ -92,8 +92,10 @@ class _homeNavState extends State<homeNav> {
                   color: Color.fromARGB(234, 7, 123, 255),
                   buttonBackgroundColor: Color.fromARGB(255, 11, 43, 99),
                   backgroundColor: Colors.transparent,
+                  animationCurve: Curves.easeInOutCubicEmphasized,
+                  animationDuration:  Duration(milliseconds: 800),
                   index: currindex,
-                  height: 60,
+                  height: 65,
                   items: items,
                   onTap: onTap,
                   // currentIndex: currindex,
