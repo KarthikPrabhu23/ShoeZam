@@ -8,6 +8,7 @@ import 'package:shop_flutter/screens/product/product.dart';
 import 'package:shop_flutter/screens/profile/my_profile.dart';
 import 'package:shop_flutter/screens/search/search_page.dart';
 
+import 'constants/colorfile.dart';
 import 'constants/stringfile.dart';
 
 class homeNav extends StatefulWidget {
@@ -89,7 +90,7 @@ class _homeNavState extends State<homeNav> {
           extendBody: true,
           backgroundColor: Colors.transparent,
           bottomNavigationBar:  CurvedNavigationBar(
-                  color: Color.fromARGB(234, 7, 123, 255),
+                  color: Col.AppBarColor,
                   buttonBackgroundColor: Color.fromARGB(255, 11, 43, 99),
                   backgroundColor: Colors.transparent,
                   animationCurve: Curves.easeInOutCubicEmphasized,

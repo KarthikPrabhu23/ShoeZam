@@ -103,9 +103,13 @@ class SignInState extends State<SignIn> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(52),
+                          color: Col.SignBG,
+                        ),
                         height: 342,
                         width: double.infinity,
-                        color: Col.SignBG,
+                        // color: Col.SignBG,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(

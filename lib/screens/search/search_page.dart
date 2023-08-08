@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, file_names, camel_case_types, prefer_const_constructors
+// ignore_for_file: unused_import, file_names, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
@@ -34,46 +34,73 @@ class searchPage extends StatelessWidget {
         ],
       ),
       drawer: const DrawerList(),
-      body: ListView(
+      body: Column(
         children: [
-          SingleChildScrollView(
-            child: Column(
+          
+          SizedBox(height: 15,),
+          Container(
+            height: 55,
+            margin: const EdgeInsets.symmetric(horizontal: 20),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(40),
+                  borderSide: BorderSide.none,
+                ),
+                fillColor: const Color.fromARGB(31, 149, 149, 149),
+                filled: true,
+                hintText: 'Search in the store',
+                suffixIcon: const Icon(Icons.search),
+              ),
+            ),
+          ),
+          SizedBox(height: 15,),
+          Container(
+            height: 680,
+            child: ListView(
+              
               children: [
-                ListTile(
-                  title: Text(
-                    'List items',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w300,
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 55,
-                  margin: const EdgeInsets.symmetric(horizontal: 20),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(40),
-                        borderSide: BorderSide.none,
+                SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      // ListTile(
+                      //   title: Text(
+                      //     'List items',
+                      //     style: TextStyle(
+                      //       fontWeight: FontWeight.w300,
+                      //     ),
+                      //   ),
+                      // ),
+                      SizedBox(
+                        height: 15,
                       ),
-                      fillColor: const Color.fromARGB(31, 149, 149, 149),
-                      filled: true,
-                      hintText: 'Search in the store',
-                      suffixIcon: const Icon(Icons.search),
-                    ),
+                      // Container(
+                      //   height: 55,
+                      //   margin: const EdgeInsets.symmetric(horizontal: 20),
+                      //   child: TextField(
+                      //     decoration: InputDecoration(
+                      //       border: OutlineInputBorder(
+                      //         borderRadius: BorderRadius.circular(40),
+                      //         borderSide: BorderSide.none,
+                      //       ),
+                      //       fillColor: const Color.fromARGB(31, 149, 149, 149),
+                      //       filled: true,
+                      //       hintText: 'Search in the store',
+                      //       suffixIcon: const Icon(Icons.search),
+                      //     ),
+                      //   ),
+                      // ),
+                      singleItem(),
+                      singleItem(),
+                      singleItem(),
+                      singleItem(),
+                      singleItem(),
+                      singleItem(),
+                      singleItem(),
+                      singleItem(),
+                    ],
                   ),
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                singleItem(),
-                singleItem(),
-                singleItem(),
-                singleItem(),
-                singleItem(),
-                singleItem(),
-                singleItem(),
-                singleItem(),
               ],
             ),
           ),

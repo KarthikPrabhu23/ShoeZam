@@ -27,9 +27,9 @@ class MyProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: Col.AppColor2,
       appBar: AppBar(
-        backgroundColor:  Colors.deepPurpleAccent,
+        backgroundColor:  Col.AppColor,
         title: Text(
           'My Account',
           style: TextStyle(
@@ -44,7 +44,7 @@ class MyProfile extends StatelessWidget {
           Container(
             height: 225,
             width: double.infinity,
-            color: Colors.deepPurpleAccent,
+            color: Col.AppColor2,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -63,7 +63,7 @@ class MyProfile extends StatelessWidget {
                 Text(
                   'Karthik Prabhu',
                   style: TextStyle(
-                    fontSize: 23,
+                    fontSize: 25,
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
                   ),

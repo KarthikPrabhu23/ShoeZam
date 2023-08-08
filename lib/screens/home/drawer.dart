@@ -29,7 +29,7 @@ class DrawerList extends StatelessWidget {
     return Drawer(
       child: Container(
         width: 80,
-        color: Col.HomeBGColor,
+        color: Col.AppColor2,
         child: ListView(
           children: [
             Column(
@@ -42,7 +42,7 @@ class DrawerList extends StatelessWidget {
                         backgroundColor: Colors.black45,
                         radius: 48,
                         child: CircleAvatar(
-                          backgroundColor: Colors.white24,
+                          // backgroundColor: Col.AppColor2,
                           backgroundImage: AssetImage("assets/b2.jpeg"),
                           radius: 45,
                         ),
@@ -69,7 +69,7 @@ class DrawerList extends StatelessWidget {
                                 onPressed: () {},
                                 child: Text(
                                   'Login',
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
                                 ),
                               ),
                             ),
@@ -147,14 +147,14 @@ class DrawerList extends StatelessWidget {
                         );
                       },
                     ),
-                    listTile(
-                      icon: Icons.home,
-                      title: "Home",
-                    ),
-                    listTile(
-                      icon: Icons.home,
-                      title: "Home",
-                    ),
+                    // listTile(
+                    //   icon: Icons.home,
+                    //   title: "Home",
+                    // ),
+                    // listTile(
+                    //   icon: Icons.home,
+                    //   title: "Home",
+                    // ),
                   ],
                 ),
               ],
