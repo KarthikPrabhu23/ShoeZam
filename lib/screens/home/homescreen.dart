@@ -355,7 +355,7 @@ class HomeScreen extends StatelessWidget {
               _brandScroll(context),
               _runShoes(context),
               SizedBox(
-                height: 7,
+                height: 60,
               ),
             ],
           ),

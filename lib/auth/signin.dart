@@ -6,6 +6,7 @@ import 'dart:math' as math;
 import "package:flutter/material.dart";
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shop_flutter/home_nav.dart';
 import 'package:shop_flutter/screens/home/homescreen.dart';
 import 'package:shop_flutter/constants/colorfile.dart';
 
@@ -146,7 +147,7 @@ class SignInState extends State<SignIn> {
                                             .pushReplacement(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                const HomeScreen(),
+                                                const homeNav(),
                                           ),
                                         ),
                                       );

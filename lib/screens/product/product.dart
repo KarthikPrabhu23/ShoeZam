@@ -21,6 +21,7 @@ class product extends StatefulWidget {
 }
 
 class _productState extends State<product> {
+  
   Widget navigationBar({
     required Color iconColor,
     required Color bgColor,
