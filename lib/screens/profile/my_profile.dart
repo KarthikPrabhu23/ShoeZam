@@ -42,7 +42,7 @@ class MyProfile extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 250,
+            height: 225,
             width: double.infinity,
             color: Colors.deepPurpleAccent,
             child: Column(
