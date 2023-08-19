@@ -181,10 +181,10 @@ class HomeScreen extends StatelessWidget {
                   brandImage: 'assets/b3.jpg',
                 ),
                 brandCard1(
-                  brandImage: 'assets/b2.jpeg',
+                  brandImage: 'assets/b4.png',
                 ),
                 brandCard1(
-                  brandImage: 'assets/b3.jpg',
+                  brandImage: 'assets/b5.jpg',
                 ),
                 brandCard1(
                   brandImage: 'assets/b1.jpg',
@@ -314,8 +314,10 @@ class HomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: Col.TopCard,
+                    
                     image: const DecorationImage(
-                      image: AssetImage('assets/man2.png'),
+                      image: AssetImage('assets/ban3.png'),
+                      fit: BoxFit.fitWidth
                     ),
                     boxShadow: const [
                       BoxShadow(
